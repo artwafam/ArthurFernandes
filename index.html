@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur F.</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+    <style>
+        .corpo {
+            background-color: #373d44;
+            color: white;
+            padding: 50px;
+            width: auto;
+            height: auto;
+        }
+
+        .card-body{
+            padding: 12px;
+            padding-top: 4px;
+        }
+
+        .card-body p{
+            text-align: start;
+            font-size: 14px;
+        }
+
+        .card-title{
+            vertical-align:middle;
+        }
+
+        .card{
+            transform-style: preserve-3d;
+        }
+
+        .card img{
+            transform: translate3d(0,0,25px);
+        }
+
+        .separador{
+            height: 130px;
+        }
+    </style>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <section id="topo">
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Arthur F.</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">3D modeling</a>
+                      <a class="nav-link" href="#">Game development</a>
+                      <a class="nav-link" href="#">Web development</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+
+    <section id="meio">
+        <div class="corpo">
+            <div class="container text-left">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                          <div class="card text-bg-dark mb-3" style="width: 22rem;">
+                            <div class="card-header">
+                                Arthur, Tecelão de polígonos
+                              </div>
+                            <img src="/images/foto-removebg-preview.png" class="card-img-top" alt="..." style="border-radius: 8px; padding: 4px;">
+                            <div class="card-body">
+                              <h7 class="card-title">Modelagem low-poly</h7>
+                              <p class="card-text">Criação de modelos tridimensionais leves e eficientes, ideais para engines de jogos e aplicações interativas que exigem performance sem comprometer a qualidade visual.</p>
+                            </div>
+                            
+                            <div class="card-body">
+                              <p><b>Ferramenta: </b>Crocotile3D</p>
+                            </div>
+                            <div class="card-footer" style="font-size: 0.87em; color: rgb(145, 145, 145);">
+                                "A perfeição está nos detalhes, cada linha de código e cada vértice ajustado."
+                            </div>
+                          </div>
+
+                          <script>
+                            VanillaTilt.init(document.querySelector(".card"), {
+                                max: 25,
+                                speed: 2800,
+                                glare: true,
+                                "max-glare": 0.35,
+                                scale: 1.12
+                            });
+                          </script>
+
+
+                    </div>
+                    <div class="col-6">
+                        <h3><span class="badge text-bg-dark">Sobre mim</span></h7>
+                        <br>
+                        <br>
+                        <p style="font-size: 20px; font-weight:normal; line-height: 2em; text-align: justify;">Designer e programador, especializado em modelagem low poly e desenvolvimento de jogos focado em eficiência e detalhes. <br><br>Com uma base sólida em programação e experiência em softwares de design 3D, eu crio modelos otimizados e visualmente impactantes para uso em jogos, animações e aplicações digitais. <br>Minhas habilidades incluem tanto a parte técnica do código quanto a sensibilidade estética necessária para dar vida a ambientes e personagens virtuais de forma prática e funcional.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        
+                    </div>
+                  </div>
+                  
+
+                  <div class="separador">
+
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col">
+                        <h3><span class="badge text-bg-dark">Crocotile 3D</span></h7>
+                            <br>
+                            <br>
+                            <p style="font-size: 20px; font-weight:normal; line-height: 2em; text-align: justify;">Eu uso o Crocotile 3D para criar modelos 3D low poly de uma forma rápida e intuitiva. O sistema de modelagem por tiles me permite desenhar e construir direto no espaço tridimensional, o que deixa o processo mais fluido e me dá controle total sobre cada detalhe. <br><br>Com essa abordagem, consigo desenvolver objetos e cenários que são leves e otimizados, perfeitos para games que pedem um visual estilizado e performance eficiente. <br>Para mim, o Crocotile é uma ferramenta que facilita a conexão entre design e funcionalidade, permitindo que eu traga meus conceitos de forma prática e fiel para os projetos.</p>
+                            <br>
+                            <p></p>
+                            <hr>
+                    </div>
+                    <div class="col">
+                        <div data-aos="zoom-in-left">
+                            <div class="BeakAndPulp">
+                                <img src="/images/crocotile3d.png" style="width: 600px; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
