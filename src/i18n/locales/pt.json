@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "Início",
+    "modeling": "Modelagem 3D",
+    "stack": "Stack",
+    "games": "Jogos",
+    "web": "Web",
+    "contact": "Contato"
+  },
+  "hero": {
+    "badge": "Game dev · animação 2D e 3D",
+    "title": "Oi, eu sou o Arthur.",
+    "titleAccent": "Eu faço jogos e mundos.",
+    "subtitle": "Na maior parte do tempo estou no Godot — um jam em 2D, uma cutscene em 3D, um personagem low-poly no Crocotile3D. Gosto quando o jogo roda bem e parece coisa de alguém, não de template.",
+    "ctaGames": "Ver jogos",
+    "ctaModels": "Trabalhos 3D",
+    "ctaContact": "Falar comigo"
+  },
+  "about": {
+    "label": "Sobre",
+    "title": "Um pouco sobre mim",
+    "p1": "Sou designer e programador do Brasil. Entrei em games porque queria transformar as ideias do meu caderno em algo jogável.",
+    "p2": "Hoje divido o tempo entre Godot, Crocotile3D e a ferramenta que fizer sentido pro projeto. Me importo com performance — prefiro uma cena low-poly limpa do que algo pesado que trava no notebook.",
+    "languages": "Falo",
+    "technologies": "Ferramentas"
+  },
+  "modeling": {
+    "label": "Modelagem 3D",
+    "title": "Crocotile 3D",
+    "description": "É assim que faço a maior parte do meu 3D. Você pinta tiles direto no modelo — parece estranho até testar, aí faz sentido. Ótimo pra jogos estilizados que precisam rodar leve.",
+    "cta": "Ver galeria",
+    "featured": "Banana Duck",
+    "tiles": "170 tiles"
+  },
+  "games": {
+    "label": "Jogos",
+    "title": "Coisas que eu fiz",
+    "description": "Jams, experimentos, coisas que ainda estou descobrindo. Alguns estão prontos, outros claramente não. Todos me ensinaram algo.",
+    "cta": "Lista completa",
+    "watchYoutube": "Ver no YouTube",
+    "status": {
+      "released": "Disponível",
+      "wip": "Em andamento",
+      "online": "Jogar no browser"
+    },
+    "shatteredParadise": {
+      "title": "Shattered Paradise",
+      "subtitle": "Godot JR Dev · One More Turn Studios",
+      "description": "Roguelike de dungeon crawler por Inferno, Purgatório e Paraíso — feito em Godot pela One More Turn Studios. Faço parte do time de dev, testando sistemas e montando mecânicas."
+    },
+    "crimsonYule": {
+      "title": "The Crimson Yule",
+      "subtitle": "Occultism Simulator",
+      "description": "Simulador de rituais sombrios que ainda estou fazendo no Godot. Tem um trailer inicial no YouTube se quiser ver por onde vai."
+    },
+    "andromeda": {
+      "title": "Take it to Andromeda",
+      "subtitle": "Estilo NES · 32 MB",
+      "description": "Fan game dos Gorillaz que fiz pra Lost Cartridge Jam. Curto, barulhento e bem NES."
+    },
+    "tiny4": {
+      "title": "Tiny 4 Bullets",
+      "subtitle": "4 jogadores online",
+      "description": "Você pilota um trem e atira no time inimigo. Caos com amigos, basicamente."
+    },
+    "panana": {
+      "title": "Panana & Gar",
+      "subtitle": "Aventura",
+      "description": "Uma ilha escondida no meio do oceano. Ninguém de fora já esteve lá. Ainda estou construindo esse."
+    },
+    "chip": {
+      "title": "Chip Keyboard",
+      "subtitle": "38 MB",
+      "description": "Jogo de ritmo onde você aperta teclas pra não morrer. Ideia simples, mão suando."
+    },
+    "rdk": {
+      "title": "Rapid Deployment Killzone",
+      "subtitle": "Ação em terceira pessoa",
+      "description": "Shooter 3D estiloso que estou fazendo no Godot. Cutscene de intro feita inteira no engine — sem ferramenta de vídeo externa.",
+      "patreon": "Apoiar no Patreon",
+      "reddit": "Post no Reddit"
+    },
+    "talora": {
+      "title": "Talora Roll Desk",
+      "subtitle": "Em desenvolvimento",
+      "description": "Projeto em torno de uma mecânica de roll-desk — ainda no começo, ainda descobrindo a parte divertida."
+    },
+    "future1": {
+      "title": "Próximo projeto",
+      "description": "Slot vazio — coloco algo aqui quando estiver pronto."
+    }
+  },
+  "web": {
+    "label": "Web",
+    "title": "Sites também",
+    "description": "Também faço front-end — layout responsivo, UI limpa, site que não quebra no celular. Cada site tem que parecer pensado, não genérico.",
+    "experience": "Trabalhei na Casa Civil do Estado do Rio de Janeiro, fazendo sites institucionais e materiais de design pra comunicação do governo.",
+    "activities": {
+      "web": "Sites oficiais — responsivos, acessíveis, que funcionam de verdade.",
+      "design": "Layouts e visuais pra peças digitais institucionais.",
+      "video": "Planejei, filmei e editei vídeos institucionais."
+    }
+  },
+  "contact": {
+    "label": "Contato",
+    "title": "Quer trabalhar junto?",
+    "subtitle": "Topo colabs em games, comissões 3D ou só trocar ideia sobre um projeto. Sem pressão — manda um oi.",
+    "email": "Mandar email",
+    "instagram": "Instagram",
+    "itch": "itch.io",
+    "copy": "Copiar email",
+    "copied": "Copiado!"
+  },
+  "footer": {
+    "rights": "Todos os Direitos Reservados © Arthur Fernandes"
+  },
+  "gamesPage": {
+    "hero": "Projetos no Godot",
+    "description": "Godot é meu engine principal. Uso pra 2D e 3D — coisa fofa, humor negro, cena de ação, o que o jogo pedir. Esses são os projetos até agora.",
+    "gridTitle": "Todos os jogos"
+  },
+  "crocotilePage": {
+    "hero": "3D low-poly",
+    "description": "Aceito comissões de modelos low-poly — personagens, props, cenários simples. Bom pra jogos que precisam de estilo sem matar o FPS.",
+    "gallery": "Galeria",
+    "workflow": "Como eu trabalho",
+    "pricing": "Preços",
+    "pricingText": "Um modelo: $6 USD · Pacote de 5: $28 USD"
+  },
+  "models": {
+    "bananaDuck": { "title": "Banana Duck", "stats": "170 tiles · 680 vértices" },
+    "insect": { "title": "Insect Base", "stats": "39 tiles · 312 vértices" },
+    "future1": { "title": "Novo modelo", "stats": "Vaga aberta" },
+    "palette": "Cores"
+  },
+  "workflow": {
+    "planning": { "title": "Planejamento", "description": "Rabisco a ideia, escolho o estilo, monto o tilemap. Referência ajuda muito aqui." },
+    "modeling": { "title": "Modelagem", "description": "Monto as formas e vou ajustando vértice até ficar certo." },
+    "texturing": { "title": "Textura", "description": "Pinto na malha com o tilemap. Simples — é o ponto do low-poly." },
+    "optimization": { "title": "Otimização", "description": "Organizo camadas, confiro a malha, vejo se a luz está legível." },
+    "export": { "title": "Exportação", "description": "Saio em .obj ou .gltf. Tilemap junto se precisar em outro software." }
+  },
+  "media": {
+    "placeholder": "Slot vazio",
+    "addSoon": "Coloque imagem, GIF ou vídeo aqui"
+  },
+  "profile": {
+    "tagline": "Game dev · animação 2D e 3D"
+  },
+  "github": {
+    "label": "GitHub",
+    "title": "Código e ferramentas",
+    "description": "Stats ao vivo do meu GitHub — o que eu escrevo de verdade e o stack que uso.",
+    "repos": "Repos",
+    "followers": "Seguidores",
+    "since": "Desde",
+    "languages": "Linguagens mais usadas",
+    "techStack": "Stack",
+    "viewProfile": "Ver perfil no GitHub",
+    "fallbackBio": "Game Developer, web designer and 2D animator",
+    "error": "Limite da API do GitHub — os stats voltam em cerca de uma hora. O link do perfil continua funcionando.",
+    "noLanguages": "O breakdown de linguagens não está disponível agora."
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "modeling": "3Dモデリング",
+    "stack": "Stack",
+    "games": "ゲーム",
+    "web": "Web",
+    "contact": "連絡"
+  },
+  "hero": {
+    "badge": "ゲーム開発 · 2D＆3Dアニメ",
+    "title": "Arthurです。",
+    "titleAccent": "ゲームと世界を作っています。",
+    "subtitle": "普段はGodotで何かを作っています — 2Dのジャムゲーム、3Dカットシーン、Crocotile3Dのローポリキャラ。テンプレじゃなく、誰かの頭の中から出てきたようなゲームが好きです。",
+    "ctaGames": "ゲームを見る",
+    "ctaModels": "3D作品",
+    "ctaContact": "連絡する"
+  },
+  "about": {
+    "label": "プロフィール",
+    "title": "ちょっと自己紹介",
+    "p1": "ブラジル出身のデザイナー兼プログラマーです。スケッチブックの変なアイデアを実際に遊べる形にしたくてゲーム開発に入りました。",
+    "p2": "今はGodot、Crocotile3D、プロジェクトに合うツールを行き来しています。パフォーマンスにはうるさい派で、重いシーンより軽くてきれいなローポリを選びます。",
+    "languages": "話せる言語",
+    "technologies": "使っているツール"
+  },
+  "modeling": {
+    "label": "3Dモデリング",
+    "title": "Crocotile 3D",
+    "description": "3DはだいたいCrocotileで作ります。モデルに直接タイルを塗る方式 — やってみると意外とハマります。軽く動くスタイライズドゲームに向いています。",
+    "cta": "ギャラリーを見る",
+    "featured": "Banana Duck",
+    "tiles": "170 tiles"
+  },
+  "games": {
+    "label": "ゲーム",
+    "title": "作ったもの",
+    "description": "ジャム、実験、まだ途中のもの。完成品もあれば、全然未完成もあります。どれも何かを教えてくれました。",
+    "cta": "一覧",
+    "watchYoutube": "YouTubeで見る",
+    "status": {
+      "released": "公開中",
+      "wip": "制作中",
+      "online": "ブラウザでプレイ"
+    },
+    "shatteredParadise": {
+      "title": "Shattered Paradise",
+      "subtitle": "Godot JR Dev · One More Turn Studios",
+      "description": "インフェルノ、煉獄、天国を巡るローグライク・ダンジョンクローラー。One More Turn StudiosのGodotチームの一員として、システムのテストとメカニクス制作に携わっています。"
+    },
+    "crimsonYule": {
+      "title": "The Crimson Yule",
+      "subtitle": "Occultism Simulator",
+      "description": "Godotで制作中のダークな儀式シミュレーター。方向性はYouTubeの早期トレーラーで見られます。"
+    },
+    "andromeda": {
+      "title": "Take it to Andromeda",
+      "subtitle": "NES風 · 32 MB",
+      "description": "Lost Cartridge Jam向けのGorillazファンゲーム。短くてうるさくて、かなりNES。"
+    },
+    "tiny4": {
+      "title": "Tiny 4 Bullets",
+      "subtitle": "4人オンライン",
+      "description": "列車を運転して敵チームを撃つゲーム。友達とのカオス、という感じ。"
+    },
+    "panana": {
+      "title": "Panana & Gar",
+      "subtitle": "アドベンチャー",
+      "description": "海のどこかにある隠れた島。外の人はまだ行ったことがない。今も制作中です。"
+    },
+    "chip": {
+      "title": "Chip Keyboard",
+      "subtitle": "38 MB",
+      "description": "キーを押して生き延びるリズムゲーム。シンプルなのに手汗もの。"
+    },
+    "rdk": {
+      "title": "Rapid Deployment Killzone",
+      "subtitle": "三人称アクション",
+      "description": "Godotで作っているスタイリッシュな3Dシューター。イントロはエンジン内だけで制作。",
+      "patreon": "Patreonで支援",
+      "reddit": "Reddit投稿"
+    },
+    "talora": {
+      "title": "Talora Roll Desk",
+      "subtitle": "開発中",
+      "description": "ロールデスクのメカニクスを中心にしたプロジェクト — まだ初期段階です。"
+    },
+    "future1": {
+      "title": "次のプロジェクト",
+      "description": "空きスロット — 準備できたら入れます。"
+    }
+  },
+  "web": {
+    "label": "Web",
+    "title": "Web制作も",
+    "description": "フロントエンドもやります — レスポンシブ、すっきりしたUI、スマホで壊れないサイト。どのサイトも意図が感じられるように作りたいです。",
+    "experience": "リオデジャネイロ州政府官房で、公式サイトとデザイン素材の制作をしていました。",
+    "activities": {
+      "web": "公式サイトの構築・保守 — レスポンシブでアクセシブルに。",
+      "design": "デジタル公式素材のレイアウトとビジュアル。",
+      "video": "公式動画の企画・撮影・編集。"
+    }
+  },
+  "contact": {
+    "label": "連絡",
+    "title": "一緒に作りませんか？",
+    "subtitle": "ゲームのコラボ、3Dのコミッション、プロジェクトの相談 — 気軽にどうぞ。",
+    "email": "メールする",
+    "instagram": "Instagram",
+    "itch": "itch.io",
+    "copy": "メールをコピー",
+    "copied": "コピーしました！"
+  },
+  "footer": {
+    "rights": "All Rights Reserved © Arthur Fernandes"
+  },
+  "gamesPage": {
+    "hero": "Godotプロジェクト",
+    "description": "メインエンジンはGodot。2Dも3Dも — かわいいもの、ダークなユーモア、アクションシーン、ゲームが求めるものを作ります。",
+    "gridTitle": "すべてのゲーム"
+  },
+  "crocotilePage": {
+    "hero": "ローポリ3D",
+    "description": "ローポリモデルのコミッションを受けています — キャラ、小物、シンプルな環境。FPSを落とさずにスタイルが欲しいゲーム向け。",
+    "gallery": "ギャラリー",
+    "workflow": "制作の流れ",
+    "pricing": "料金",
+    "pricingText": "1モデル: $6 USD · 5本パック: $28 USD"
+  },
+  "models": {
+    "bananaDuck": { "title": "Banana Duck", "stats": "170 tiles · 680頂点" },
+    "insect": { "title": "Insect Base", "stats": "39 tiles · 312頂点" },
+    "future1": { "title": "新モデル", "stats": "空きあり" },
+    "palette": "カラー"
+  },
+  "workflow": {
+    "planning": { "title": "企画", "description": "アイデアを描き、スタイルを決め、タイルマップを作る。参考画像はここで効きます。" },
+    "modeling": { "title": "モデリング", "description": "形を組んで、頂点を動かして納得いくまで調整。" },
+    "texturing": { "title": "テクスチャ", "description": "タイルマップでメッシュに直接ペイント。シンプルがローポリの要点。" },
+    "optimization": { "title": "最適化", "description": "レイヤーを整理し、メッシュとライティングを確認。" },
+    "export": { "title": "エクスポート", "description": ".objまたは.gltfで書き出し。必要ならタイルマップも。" }
+  },
+  "media": {
+    "placeholder": "空きスロット",
+    "addSoon": "画像・GIF・動画を追加"
+  },
+  "profile": {
+    "tagline": "ゲーム開発 · 2D＆3Dアニメ"
+  },
+  "github": {
+    "label": "GitHub",
+    "title": "コードとツール",
+    "description": "GitHubからのライブ統計 — 実際に書いている言語と使うスタック。",
+    "repos": "リポジトリ",
+    "followers": "フォロワー",
+    "since": "開始",
+    "languages": "よく使う言語",
+    "techStack": "テックスタック",
+    "viewProfile": "GitHubプロフィール",
+    "fallbackBio": "Game Developer, web designer and 2D animator",
+    "error": "GitHubのAPI制限中です。約1時間後に統計が更新されます。プロフィールリンクは利用できます。",
+    "noLanguages": "言語の内訳は現在表示できません。"
+  }
+}
