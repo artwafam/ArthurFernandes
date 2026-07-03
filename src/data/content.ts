@@ -1,4 +1,4 @@
-import type { ModelItem, ProjectItem, WorkflowStep } from '../types'
+import type { GalleryItem, ModelItem, ProjectItem, WorkflowStep } from '../types'
 
 export const GAMES: ProjectItem[] = [
   {
@@ -14,6 +14,22 @@ export const GAMES: ProjectItem[] = [
       alt: 'Shattered Paradise',
     },
     tags: ['roguelike', 'godot', 'studio'],
+    featured: true,
+    size: 'lg',
+  },
+  {
+    id: 'fight-life-legacy',
+    titleKey: 'games.fightLifeLegacy.title',
+    subtitleKey: 'games.fightLifeLegacy.subtitle',
+    descriptionKey: 'games.fightLifeLegacy.description',
+    href: 'https://store.steampowered.com/app/4240750/Fight_Life_Legacy/',
+    status: 'workedOn',
+    media: {
+      type: 'image',
+      src: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4240750/369b086366153bf746724d6fcef6a9ab4d5a9a61/capsule_616x353.jpg',
+      alt: 'Fight Life Legacy',
+    },
+    tags: ['rpg', 'fighting', 'studio', 'steam'],
     featured: true,
     size: 'lg',
   },
@@ -54,7 +70,11 @@ export const GAMES: ProjectItem[] = [
     subtitleKey: 'games.talora.subtitle',
     descriptionKey: 'games.talora.description',
     status: 'wip',
-    media: { type: 'placeholder' },
+    media: {
+      type: 'image',
+      src: 'images/TaloraRollDesk_PROMO.png',
+      alt: 'Talora Roll Desk',
+    },
     tags: ['godot', 'desk'],
     featured: true,
     size: 'md',
@@ -139,9 +159,18 @@ export const WORKFLOW_STEPS: WorkflowStep[] = [
 
 export const HOME_GAME_PREVIEWS = GAMES.filter((g) => g.featured)
 
-export const CAROUSEL_ITEMS = [
-  { src: 'images/RDKgame.png', alt: 'Rapid Deployment Killzone' },
-  { src: 'images/Panana2D.png', alt: 'Panana 2D' },
-  { src: 'images/BeakAndPulp.jpeg', alt: 'Beak and Pulp' },
-  { src: 'images/tiny4bullets.png', alt: 'Tiny 4 Bullets' },
+export const GALLERY_ITEMS: GalleryItem[] = [
+  { id: 'talora-promo', media: { type: 'image', src: 'images/TaloraRollDesk_PROMO.png', alt: 'Talora Roll Desk' } },
+  { id: 'talora-logo', media: { type: 'image', src: 'images/talora_only.svg', alt: 'Talora' } },
+  { id: 'rdk-game', media: { type: 'image', src: 'images/RDKgame.png', alt: 'Rapid Deployment Killzone' } },
+  { id: 'rdk', media: { type: 'image', src: 'images/RDK.png', alt: 'Rapid Deployment Killzone' } },
+  { id: 'panana-2d', media: { type: 'image', src: 'images/Panana2D.png', alt: 'Panana 2D' } },
+  { id: 'panana-gar', media: { type: 'image', src: 'images/Panana&Gar.png', alt: 'Panana & Gar' } },
+  { id: 'banana-duck', media: { type: 'gif', src: 'images/Panana.gif', alt: 'Banana Duck' } },
+  { id: 'insect', media: { type: 'gif', src: 'images/GarGIF.gif', alt: 'Insect Base' } },
+  { id: 'losango', media: { type: 'gif', src: 'images/losango3d.gif', alt: 'Low-poly 3D' } },
+  { id: 'beak-pulp', media: { type: 'image', src: 'images/BeakAndPulp.jpeg', alt: 'Beak and Pulp' } },
+  { id: 'tiny4', media: { type: 'image', src: 'images/tiny4bullets.png', alt: 'Tiny 4 Bullets' } },
+  { id: 'andromeda', media: { type: 'image', src: 'images/print02.png', alt: 'Take it to Andromeda' } },
+  { id: 'chip', media: { type: 'gif', src: 'images/MOSHED-2019-8-8-1-26-30.gif', alt: 'Chip Keyboard' } },
 ]

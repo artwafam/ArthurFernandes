@@ -8,26 +8,26 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "badge": "Spelutveckling · 2D & 3D-animation",
-    "title": "Hej, jag är Arthur.",
-    "titleAccent": "Jag bygger spel och världar.",
-    "subtitle": "Oftast sitter jag i Godot — ett 2D-jamspel, en 3D-cutscene, en low-poly-karaktär i Crocotile3D. Jag gillar när spel känns bra att spela och ser ut som att de kom från någons huvud, inte en mall.",
-    "ctaGames": "Se mina spel",
-    "ctaModels": "3D-arbete",
+    "badge": "Spelutvecklare · Programmerare · 3D-modellering",
+    "title": "Hej, jag är",
+    "titleAccent": "en GameDev och animator.",
+    "subtitle": "Jag arbetar främst med Godot Engine och skapar 2D- och 3D-spel, gameplay-system och low-poly-tillgångar. Jag strävar efter att utveckla lätta, väloptimerade projekt med en egen identitet.",
+    "ctaGames": "Se projekt",
+    "ctaModels": "3D-modellering",
     "ctaContact": "Hör av dig"
   },
   "about": {
     "label": "Om mig",
-    "title": "Lite om mig",
-    "p1": "Jag är designer och programmerare från Brasilien. Jag började med spel för att jag ville göra skissbokens konstiga idéer spelbara.",
-    "p2": "Nu växlar jag mellan Godot, Crocotile3D och det verktyg som passar projektet. Jag bryr mig om prestanda — hellre en ren low-poly-scen än något tungt som hackar på en laptop.",
-    "languages": "Jag talar",
-    "technologies": "Verktyg jag använder"
+    "title": "Vem jag är",
+    "p1": "Jag är en brasiliansk spelutvecklare, programmerare och 3D-artist. Jag arbetar med att förvandla idéer till spelbara upplevelser, från prototyper till färdiga projekt.",
+    "p2": "Mitt huvudverktyg är Godot Engine, men jag använder också Crocotile3D och andra teknologier beroende på projektets behov. Jag fokuserar på prestanda, organisation och utveckling av återanvändbara system.",
+    "languages": "Språk",
+    "technologies": "Teknologier"
   },
   "modeling": {
     "label": "3D-modellering",
     "title": "Crocotile 3D",
-    "description": "Så bygger jag det mesta av mitt 3D. Du målar tiles direkt på modellen — låter konstigt tills man testar. Perfekt för stiliserade spel som ska gå snabbt.",
+    "description": "Jag producerar low-poly-modeller med Crocotile3D, ett tile-baserat verktyg som möjliggör skapandet av lätta, stiliserade speltillgångar. Resultatet är en konsekvent estetik med utmärkt prestanda.",
     "cta": "Se galleriet",
     "featured": "Banana Duck",
     "tiles": "170 tiles"
@@ -35,76 +35,83 @@
   "games": {
     "label": "Spel",
     "title": "Saker jag gjort",
-    "description": "Jams, experiment, saker jag fortfarande redar ut. Några är klara, andra är det verkligen inte. Alla lärde mig något.",
+    "description": "Ett urval av personliga projekt, game jams och professionellt arbete utvecklat under min karriär.",
     "cta": "Hela listan",
+    "galleryCta": "Se galleriet",
     "watchYoutube": "Titta på YouTube",
     "status": {
       "released": "Ute nu",
       "wip": "På gång",
-      "online": "Spela i webbläsaren"
+      "online": "Spela i webbläsaren",
+      "workedOn": "Jobbade med"
     },
     "shatteredParadise": {
       "title": "Shattered Paradise",
       "subtitle": "Godot JR Dev · One More Turn Studios",
-      "description": "Roguelike dungeon crawler genom Inferno, Skärselden och Paradiset — byggt i Godot av One More Turn Studios. Jag är med i dev-teamet, testar system och bygger mekaniker."
+      "description": "En roguelike dungeon crawler genom Inferno, Skärselden och Paradiset | byggd i Godot av One More Turn Studios. Jag är en del av utvecklingsteamet, testar system och implementerar mekaniker."
+    },
+    "fightLifeLegacy": {
+      "title": "Fight Life Legacy",
+      "subtitle": "Turordningsbaserat MMA-RPG · Blade games",
+      "description": "Ett turordningsbaserat fighting-RPG om att klättra i MMA, träna attribut och följa en berättelse om arv och mysterium. Jag bidrog under utvecklingen."
     },
     "crimsonYule": {
       "title": "The Crimson Yule",
       "subtitle": "Occultism Simulator",
-      "description": "En mörk ritualsimulator jag fortfarande bygger i Godot. Det finns en tidig trailer på YouTube om du vill se vart det är på väg."
+      "description": "Det här spelet är en ockult tematiserad levande-världssimulator där spelaren varken följer en linjär berättelse eller ett fördefinierat mål. Istället tar de rollen som en outsider i en dynamisk by, definierar sin egen identitet och interagerar med en miljö som fungerar självständigt."
     },
     "andromeda": {
       "title": "Take it to Andromeda",
       "subtitle": "NES-stil · 32 MB",
-      "description": "Ett Gorillaz-fanspel jag gjorde till Lost Cartridge Jam. Kort, högljutt och väldigt NES."
+      "description": "Ett Gorillaz-fanspel för Lost Cartridge Jam."
     },
     "tiny4": {
       "title": "Tiny 4 Bullets",
       "subtitle": "4 spelare online",
-      "description": "Du kör ett tåg och skjuter på fiendelaget. Kaos med vänner, helt enkelt."
+      "description": "Spela med 4 vänner och få tåget till sin destination."
     },
     "panana": {
       "title": "Panana & Gar",
       "subtitle": "Äventyr",
-      "description": "En gömd ö någonstans i havet. Ingen utifrån har varit där. Jag bygger fortfarande på det här."
+      "description": "En ö gömd mitt i havet. Ingen utomstående har någonsin satt sin fot på den här ön, förrän nu..."
     },
     "chip": {
       "title": "Chip Keyboard",
       "subtitle": "38 MB",
-      "description": "Rytmspel där du trycker tangenter för att inte dö. Enkel idé, svettiga handflator."
+      "description": "Ett rytmspel där du trycker tangenter för att överleva."
     },
     "rdk": {
       "title": "Rapid Deployment Killzone",
       "subtitle": "Tredjepersonsaction",
-      "description": "En stilren 3D-shooter jag jobbar på i Godot. Intro-cutscenen gjordes helt i motorn.",
+      "description": "En tredjepersonsskjutare inspirerad av MDK och Tribes.",
       "patreon": "Stöd på Patreon",
       "reddit": "Reddit-inlägg"
     },
     "talora": {
       "title": "Talora Roll Desk",
-      "subtitle": "Under utveckling",
-      "description": "Ett projekt kring en roll-desk-mekanik — fortfarande tidigt, fortfarande letar efter det roliga."
+      "subtitle": "Virtual TableTop RPG platform",
+      "description": "Spela ditt favorit-RPG med vänner på den här plattformen med öppen källkod."
     },
     "future1": {
       "title": "Nästa projekt",
-      "description": "Tom plats — jag lägger in något här när det är klart."
+      "description": "Tom plats | jag lägger in något här när det är klart."
     }
   },
   "web": {
     "label": "Webb",
     "title": "Webbplatser också",
-    "description": "Jag gör front-end också — responsiva layouter, ren UI, sajter som inte går sönder på mobilen. Varje sajt ska kännas genomtänkt.",
-    "experience": "Jag jobbade på Casa Civil do Estado do Rio de Janeiro med institutionella webbplatser och designmaterial.",
+    "description": "Jag utvecklar också responsiva webbapplikationer med fokus på prestanda, tillgänglighet och tydliga gränssnitt.",
+    "experience": "Jag arbetade på Casa Civil do Estado do Rio de Janeiro med att utveckla institutionella webbplatser, grafiskt material och audiovisuellt innehåll för statlig kommunikation.",
     "activities": {
-      "web": "Byggde och underhöll officiella webbplatser — responsiva och tillgängliga.",
-      "design": "Layouter och visuellt för digitala institutionella material.",
+      "web": "Officiella webbplatser | responsiva, tillgängliga och som faktiskt fungerar.",
+      "design": "Layouter och visuellt material för digitala institutionella tillgångar.",
       "video": "Planerade, filmade och redigerade institutionella videor."
     }
   },
   "contact": {
     "label": "Kontakt",
     "title": "Vill du jobba tillsammans?",
-    "subtitle": "Jag är öppen för spelcollabs, 3D-uppdrag eller bara att prata om en idé. Ingen stress — skriv gärna.",
+    "subtitle": "Jag är tillgänglig för spelutveckling, programmering, 3D-modellering och samarbeten i indieprojekt.",
     "email": "Skicka mejl",
     "instagram": "Instagram",
     "itch": "itch.io",
@@ -116,12 +123,17 @@
   },
   "gamesPage": {
     "hero": "Godot-projekt",
-    "description": "Godot är min huvudmotor. 2D och 3D — gulligt, mörk humor, action, vad spelet behöver. Det här är projekten hittills.",
+    "description": "Godot är min huvudmotor. Jag använder den för 2D och 3D | oavsett om det är något gulligt, mörk humor eller action, vad spelet kräver. Här är mina projekt hittills.",
     "gridTitle": "Alla spel"
+  },
+  "galleryPage": {
+    "label": "Media",
+    "hero": "Galleri",
+    "description": "Bilder, GIF:ar och videor från mina projekt och experiment."
   },
   "crocotilePage": {
     "hero": "Low-poly 3D",
-    "description": "Jag tar uppdrag med low-poly-modeller — karaktärer, rekvisita, enkla miljöer. Bra för spel som vill ha stil utan att döda FPS.",
+    "description": "Jag tar uppdrag med low-poly-modeller | karaktärer, rekvisita, enkla miljöer. Bra för spel som vill ha stil utan att döda bildfrekvensen.",
     "gallery": "Galleri",
     "workflow": "Så jobbar jag",
     "pricing": "Priser",
@@ -135,14 +147,14 @@
   },
   "workflow": {
     "planning": { "title": "Planering", "description": "Skissa idén, välj stil, gör en tilemap. Referenser hjälper mycket här." },
-    "modeling": { "title": "Modellering", "description": "Bygg former och flytta vertices tills det ser rätt ut." },
-    "texturing": { "title": "Texturering", "description": "Måla på meshen med tilemap. Håll det enkelt — det är poängen med low-poly." },
-    "optimization": { "title": "Optimering", "description": "Sortera lager, kolla meshen, se till att ljuset läses tydligt." },
-    "export": { "title": "Export", "description": "Leverera som .obj eller .gltf. Tilemap med om du behöver den någon annanstans." }
+    "modeling": { "title": "Modellering", "description": "Jag sätter upp formerna och justerar vertices tills det ser rätt ut." },
+    "texturing": { "title": "Texturering", "description": "Jag målar på meshen med en tilemap." },
+    "optimization": { "title": "Optimering", "description": "Jag organiserar lager, kontrollerar meshen och ser till att belysningen är läsbar." },
+    "export": { "title": "Export", "description": "Jag sparar som .obj eller .gltf, inklusive tilemap om det behövs för annan programvara." }
   },
   "media": {
     "placeholder": "Tom plats",
-    "addSoon": "Lägg till bild, GIF eller video"
+    "addSoon": "Lägg till en bild, GIF eller video här"
   },
   "profile": {
     "tagline": "Spelutveckling · 2D & 3D-animation"
@@ -150,7 +162,7 @@
   "github": {
     "label": "GitHub",
     "title": "Kod och verktyg",
-    "description": "Live-statistik från min GitHub — vad jag faktiskt skriver och stacken jag använder.",
+    "description": "Min GitHub-profil samlar personliga projekt, verktyg och experiment utvecklade under de senaste åren.",
     "repos": "Repos",
     "followers": "Följare",
     "since": "Sedan",
@@ -158,7 +170,7 @@
     "techStack": "Tech stack",
     "viewProfile": "Visa GitHub-profil",
     "fallbackBio": "Game Developer, web designer and 2D animator",
-    "error": "GitHub API-gräns nådd — statistik uppdateras om cirka en timme. Profillänken fungerar fortfarande.",
+    "error": "GitHub API-gräns nådd | statistik uppdateras om cirka en timme. Profillänken fungerar fortfarande.",
     "noLanguages": "Språkfördelning är inte tillgänglig just nu."
   }
 }

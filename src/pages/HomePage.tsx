@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next'
-import { Hero, ShowcaseCarousel } from '../components/Hero'
+import { Hero } from '../components/Hero'
 import { ScrollReveal, SectionHeader } from '../components/CyberBackground'
 import { ProjectCard } from '../components/ProjectCard'
 import { ContactSection } from '../components/ContactSection'
 import { GitHubStatsSection } from '../components/GitHubStats'
 import { CyberButton } from '../components/ProjectCard'
 import { MediaSlot } from '../components/MediaSlot'
-import { HOME_GAME_PREVIEWS, CAROUSEL_ITEMS } from '../data/content'
+import { HOME_GAME_PREVIEWS } from '../data/content'
 import { asset } from '../utils/asset'
 
 export function HomePage() {
@@ -23,14 +23,13 @@ export function HomePage() {
           <ScrollReveal>
             <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
               <SectionHeader label={t('games.label')} title={t('games.title')} className="mb-0" />
-              <CyberButton to="/games">{t('games.cta')}</CyberButton>
+              <div className="flex flex-wrap gap-3">
+                <CyberButton to="/gallery" variant="ghost">{t('games.galleryCta')}</CyberButton>
+                <CyberButton to="/games">{t('games.cta')}</CyberButton>
+              </div>
             </div>
             <p className="mb-8 max-w-2xl text-text-muted">{t('games.description')}</p>
           </ScrollReveal>
-
-          <div className="mb-8">
-            <ShowcaseCarousel items={CAROUSEL_ITEMS} />
-          </div>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {HOME_GAME_PREVIEWS.map((game, i) => (

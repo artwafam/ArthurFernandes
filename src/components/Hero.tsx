@@ -110,31 +110,6 @@ export function LanguageFlags() {
   )
 }
 
-interface ShowcaseCarouselProps {
-  items: { src: string; alt: string }[]
-}
-
-export function ShowcaseCarousel({ items }: ShowcaseCarouselProps) {
-  return (
-    <div className="glass overflow-hidden rounded-xl">
-      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto p-4">
-        {items.map((item) => (
-          <img
-            key={item.src}
-            src={asset(item.src)}
-            alt={item.alt}
-            className="h-48 w-auto shrink-0 snap-center rounded-lg object-cover transition-transform hover:scale-105 md:h-56"
-            loading="lazy"
-          />
-        ))}
-        <div className="flex h-48 w-48 shrink-0 snap-center items-center justify-center rounded-lg border border-dashed border-accent/20 bg-void-light/50 md:h-56">
-          <span className="font-mono text-xs text-text-muted">+</span>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export function PageHero({ label, title, description }: { label: string; title: string; description: string }) {
   return (
     <section className="section-padding pt-32 pb-16">

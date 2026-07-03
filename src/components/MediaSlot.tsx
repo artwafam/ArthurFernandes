@@ -54,11 +54,13 @@ export function MediaSlot({ media, className = '', aspect = 'aspect-video' }: Me
     )
   }
 
+  const isSvg = media.src.endsWith('.svg')
+
   return (
     <img
       src={asset(media.src)}
       alt={media.alt ?? ''}
-      className={`${aspect} ${className} w-full rounded-lg object-cover`}
+      className={`${aspect} ${className} w-full rounded-lg ${isSvg ? 'bg-void object-contain p-6' : 'object-cover'}`}
       loading="lazy"
     />
   )

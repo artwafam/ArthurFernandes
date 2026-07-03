@@ -21,7 +21,7 @@ export interface ProjectItem {
   links?: ProjectLink[]
   secondaryHref?: string
   secondaryLabelKey?: string
-  status?: 'released' | 'wip' | 'online'
+  status?: 'released' | 'wip' | 'online' | 'workedOn'
   media: MediaAsset
   tags?: string[]
   featured?: boolean
@@ -40,6 +40,11 @@ export interface WorkflowStep {
   id: string
   titleKey: string
   descriptionKey: string
+}
+
+export interface GalleryItem {
+  id: string
+  media: MediaAsset
 }
 
 export type Locale = 'en' | 'pt' | 'ja' | 'sv'

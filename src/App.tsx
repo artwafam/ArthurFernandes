@@ -6,6 +6,7 @@ import { Footer } from './components/Footer'
 import { HomePage } from './pages/HomePage'
 import { GamesPage } from './pages/GamesPage'
 import { CrocotilePage } from './pages/CrocotilePage'
+import { GalleryPage } from './pages/GalleryPage'
 import { useScrollRestoration } from './hooks/useScrollRestoration'
 import { GitHubProvider } from './context/GitHubContext'
 
@@ -26,6 +27,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<HomePage />} />
           <Route path="/games" element={<GamesPage />} />
           <Route path="/crocotile" element={<CrocotilePage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

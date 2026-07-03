@@ -8,26 +8,26 @@
     "contact": "Contato"
   },
   "hero": {
-    "badge": "Game dev · animação 2D e 3D",
-    "title": "Oi, eu sou o Arthur.",
-    "titleAccent": "Eu faço jogos e mundos.",
-    "subtitle": "Na maior parte do tempo estou no Godot — um jam em 2D, uma cutscene em 3D, um personagem low-poly no Crocotile3D. Gosto quando o jogo roda bem e parece coisa de alguém, não de template.",
-    "ctaGames": "Ver jogos",
-    "ctaModels": "Trabalhos 3D",
-    "ctaContact": "Falar comigo"
+    "badge": "Game Developer · Programador · Modelagem 3D",
+    "title": "Olá, sou",
+    "titleAccent": "GameDev e animador.",
+    "subtitle": "Trabalho principalmente com Godot Engine, criando jogos 2D e 3D, sistemas de gameplay e assets low-poly. Busco desenvolver projetos leves, bem otimizados e com identidade própria.",
+    "ctaGames": "Ver projetos",
+    "ctaModels": "Modelagem 3D",
+    "ctaContact": "Entrar em contato"
   },
   "about": {
     "label": "Sobre",
-    "title": "Um pouco sobre mim",
-    "p1": "Sou designer e programador do Brasil. Entrei em games porque queria transformar as ideias do meu caderno em algo jogável.",
-    "p2": "Hoje divido o tempo entre Godot, Crocotile3D e a ferramenta que fizer sentido pro projeto. Me importo com performance — prefiro uma cena low-poly limpa do que algo pesado que trava no notebook.",
-    "languages": "Falo",
-    "technologies": "Ferramentas"
+    "title": "Quem sou",
+    "p1": "Sou desenvolvedor de jogos, programador e artista 3D brasileiro. Trabalho transformando ideias em experiências jogáveis, desde protótipos até projetos completos.",
+    "p2": "Minha principal ferramenta é a Godot Engine, mas também utilizo Crocotile3D e outras tecnologias conforme as necessidades do projeto. Tenho foco em desempenho, organização e desenvolvimento de sistemas reutilizáveis.",
+    "languages": "Idiomas",
+    "technologies": "Tecnologias"
   },
   "modeling": {
     "label": "Modelagem 3D",
     "title": "Crocotile 3D",
-    "description": "É assim que faço a maior parte do meu 3D. Você pinta tiles direto no modelo — parece estranho até testar, aí faz sentido. Ótimo pra jogos estilizados que precisam rodar leve.",
+    "description": "Produzo modelos low-poly utilizando Crocotile3D, uma ferramenta baseada em tiles que permite criar assets leves e estilizados para jogos. O resultado é uma estética consistente com excelente desempenho.",
     "cta": "Ver galeria",
     "featured": "Banana Duck",
     "tiles": "170 tiles"
@@ -35,55 +35,62 @@
   "games": {
     "label": "Jogos",
     "title": "Coisas que eu fiz",
-    "description": "Jams, experimentos, coisas que ainda estou descobrindo. Alguns estão prontos, outros claramente não. Todos me ensinaram algo.",
+    "description": "Uma seleção de projetos pessoais, game jams e trabalhos profissionais desenvolvidos ao longo da minha trajetória.",
     "cta": "Lista completa",
+    "galleryCta": "Ver galeria",
     "watchYoutube": "Ver no YouTube",
     "status": {
       "released": "Disponível",
       "wip": "Em andamento",
-      "online": "Jogar no browser"
+      "online": "Jogar no browser",
+      "workedOn": "Trabalhei em"
     },
     "shatteredParadise": {
       "title": "Shattered Paradise",
       "subtitle": "Godot JR Dev · One More Turn Studios",
-      "description": "Roguelike de dungeon crawler por Inferno, Purgatório e Paraíso — feito em Godot pela One More Turn Studios. Faço parte do time de dev, testando sistemas e montando mecânicas."
+      "description": "Roguelike de dungeon crawler por Inferno, Purgatório e Paraíso | feito em Godot pela One More Turn Studios. Faço parte do time de dev, testando sistemas e montando mecânicas."
+    },
+    "fightLifeLegacy": {
+      "title": "Fight Life Legacy",
+      "subtitle": "RPG de MMA por turnos · Blade games",
+      "description": "RPG de luta por turnos sobre subir no MMA, treinar atributos e seguir uma história de legado e mistério. Contribuí durante o desenvolvimento."
     },
     "crimsonYule": {
       "title": "The Crimson Yule",
       "subtitle": "Occultism Simulator",
-      "description": "Simulador de rituais sombrios que ainda estou fazendo no Godot. Tem um trailer inicial no YouTube se quiser ver por onde vai."
+      "description": "Este jogo é um simulador de mundo vivo com temática ocultista, onde o jogador não segue uma história linear nem um objetivo pré-definido. Em vez disso, ele assume o papel de um forasteiro em uma vila dinâmica, podendo definir sua própria identidade, enquanto interage com um ambiente que funciona de forma independente."
     },
     "andromeda": {
       "title": "Take it to Andromeda",
       "subtitle": "Estilo NES · 32 MB",
-      "description": "Fan game dos Gorillaz que fiz pra Lost Cartridge Jam. Curto, barulhento e bem NES."
+      "description": "Fan game dos Gorillaz para Lost Cartridge Jam."
     },
     "tiny4": {
       "title": "Tiny 4 Bullets",
-      "subtitle": "4 jogadores online",
-      "description": "Você pilota um trem e atira no time inimigo. Caos com amigos, basicamente."
+      "subtitle": "4 jogadores, online",
+      "description": "Jogue com 4 amigos, leve o trem ao seu destino."
     },
     "panana": {
       "title": "Panana & Gar",
       "subtitle": "Aventura",
-      "description": "Uma ilha escondida no meio do oceano. Ninguém de fora já esteve lá. Ainda estou construindo esse."
+      "description": "Uma ilha escondida no meio do oceano. Ninguém de fora nunca pisou nesta ilha, até agora..."
     },
     "chip": {
       "title": "Chip Keyboard",
       "subtitle": "38 MB",
-      "description": "Jogo de ritmo onde você aperta teclas pra não morrer. Ideia simples, mão suando."
+      "description": "Jogo de ritmo onde você aperta teclas pra não morrer."
     },
     "rdk": {
       "title": "Rapid Deployment Killzone",
       "subtitle": "Ação em terceira pessoa",
-      "description": "Shooter 3D estiloso que estou fazendo no Godot. Cutscene de intro feita inteira no engine — sem ferramenta de vídeo externa.",
+      "description": "Tiro em terceira pessoa, inspirado em MDK e Tribes",
       "patreon": "Apoiar no Patreon",
       "reddit": "Post no Reddit"
     },
     "talora": {
       "title": "Talora Roll Desk",
-      "subtitle": "Em desenvolvimento",
-      "description": "Projeto em torno de uma mecânica de roll-desk — ainda no começo, ainda descobrindo a parte divertida."
+      "subtitle": "Virtual TableTop RPG platform",
+      "description": "Jogue com seus amigos seu RPG favorito nesta plataforma de código aberto."
     },
     "future1": {
       "title": "Próximo projeto",
@@ -93,18 +100,18 @@
   "web": {
     "label": "Web",
     "title": "Sites também",
-    "description": "Também faço front-end — layout responsivo, UI limpa, site que não quebra no celular. Cada site tem que parecer pensado, não genérico.",
-    "experience": "Trabalhei na Casa Civil do Estado do Rio de Janeiro, fazendo sites institucionais e materiais de design pra comunicação do governo.",
+    "description": "Também desenvolvo aplicações web responsivas, priorizando desempenho, acessibilidade e interfaces objetivas.",
+    "experience": "Atuei na Casa Civil do Estado do Rio de Janeiro desenvolvendo sites institucionais, materiais gráficos e conteúdos audiovisuais para comunicação governamental.",
     "activities": {
-      "web": "Sites oficiais — responsivos, acessíveis, que funcionam de verdade.",
+      "web": "Sites oficiais | responsivos, acessíveis, que funcionam de verdade.",
       "design": "Layouts e visuais pra peças digitais institucionais.",
       "video": "Planejei, filmei e editei vídeos institucionais."
     }
   },
   "contact": {
     "label": "Contato",
-    "title": "Quer trabalhar junto?",
-    "subtitle": "Topo colabs em games, comissões 3D ou só trocar ideia sobre um projeto. Sem pressão — manda um oi.",
+    "title": "Vamos trabalhar juntos?",
+    "subtitle": "Estou disponível para desenvolvimento de jogos, programação, modelagem 3D e colaborações em projetos independentes.",
     "email": "Mandar email",
     "instagram": "Instagram",
     "itch": "itch.io",
@@ -116,12 +123,17 @@
   },
   "gamesPage": {
     "hero": "Projetos no Godot",
-    "description": "Godot é meu engine principal. Uso pra 2D e 3D — coisa fofa, humor negro, cena de ação, o que o jogo pedir. Esses são os projetos até agora.",
+    "description": "Godot é meu engine principal. Uso pra 2D e 3D | coisa fofa, humor negro, cena de ação, o que o jogo pedir. Esses são os projetos até agora.",
     "gridTitle": "Todos os jogos"
+  },
+  "galleryPage": {
+    "label": "Mídia",
+    "hero": "Galeria",
+    "description": "Imagens, GIFs e vídeos dos meus projetos e experimentos."
   },
   "crocotilePage": {
     "hero": "3D low-poly",
-    "description": "Aceito comissões de modelos low-poly — personagens, props, cenários simples. Bom pra jogos que precisam de estilo sem matar o FPS.",
+    "description": "Aceito comissões de modelos low-poly | personagens, props, cenários simples. Bom pra jogos que precisam de estilo sem matar o FPS.",
     "gallery": "Galeria",
     "workflow": "Como eu trabalho",
     "pricing": "Preços",
@@ -136,9 +148,9 @@
   "workflow": {
     "planning": { "title": "Planejamento", "description": "Rabisco a ideia, escolho o estilo, monto o tilemap. Referência ajuda muito aqui." },
     "modeling": { "title": "Modelagem", "description": "Monto as formas e vou ajustando vértice até ficar certo." },
-    "texturing": { "title": "Textura", "description": "Pinto na malha com o tilemap. Simples — é o ponto do low-poly." },
+    "texturing": { "title": "Textura", "description": "Pinto na malha com o tilemap." },
     "optimization": { "title": "Otimização", "description": "Organizo camadas, confiro a malha, vejo se a luz está legível." },
-    "export": { "title": "Exportação", "description": "Saio em .obj ou .gltf. Tilemap junto se precisar em outro software." }
+    "export": { "title": "Exportação", "description": "Salvo em .obj ou .gltf. Tilemap junto se precisar em outro software." }
   },
   "media": {
     "placeholder": "Slot vazio",
@@ -150,7 +162,7 @@
   "github": {
     "label": "GitHub",
     "title": "Código e ferramentas",
-    "description": "Stats ao vivo do meu GitHub — o que eu escrevo de verdade e o stack que uso.",
+    "description": "Meu perfil no GitHub reúne projetos pessoais, ferramentas e experimentos desenvolvidos ao longo dos últimos anos.",
     "repos": "Repos",
     "followers": "Seguidores",
     "since": "Desde",
@@ -158,7 +170,7 @@
     "techStack": "Stack",
     "viewProfile": "Ver perfil no GitHub",
     "fallbackBio": "Game Developer, web designer and 2D animator",
-    "error": "Limite da API do GitHub — os stats voltam em cerca de uma hora. O link do perfil continua funcionando.",
+    "error": "Limite da API do GitHub | os stats voltam em cerca de uma hora. O link do perfil continua funcionando.",
     "noLanguages": "O breakdown de linguagens não está disponível agora."
   }
 }
