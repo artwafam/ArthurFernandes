@@ -21,12 +21,11 @@ export function HomePage() {
       <section id="game" className="section-padding">
         <div className="container-main">
           <ScrollReveal>
-            <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+            <div className="mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
               <SectionHeader label={t('games.label')} title={t('games.title')} className="mb-0" />
-              <div className="flex flex-wrap gap-3">
-                <CyberButton to="/gallery" variant="ghost">{t('games.galleryCta')}</CyberButton>
-                <CyberButton to="/games">{t('games.cta')}</CyberButton>
-              </div>
+              <CyberButton to="/gallery" variant="ghost" className="w-full sm:w-auto">
+                {t('games.galleryCta')}
+              </CyberButton>
             </div>
             <p className="mb-8 max-w-2xl text-text-muted">{t('games.description')}</p>
           </ScrollReveal>
@@ -65,12 +64,12 @@ export function HomePage() {
                   media={{ type: 'gif', src: 'images/Panana.gif', alt: 'Banana Duck' }}
                   aspect="aspect-video"
                 />
-                <div className="flex items-center justify-between p-4">
+                <div className="flex flex-col gap-4 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
                   <div>
                     <p className="font-display font-semibold">{t('modeling.featured')}</p>
                     <p className="font-mono text-xs text-accent">{t('modeling.tiles')}</p>
                   </div>
-                  <CyberButton to="/crocotile">{t('modeling.cta')}</CyberButton>
+                  <CyberButton to="/crocotile" className="w-full sm:w-auto">{t('modeling.cta')}</CyberButton>
                 </div>
               </div>
             </div>

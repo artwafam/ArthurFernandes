@@ -99,9 +99,9 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ label, title, className = '' }: SectionHeaderProps) {
   return (
-    <div className={`mb-10 ${className}`}>
-      <span className="font-mono text-xs uppercase tracking-[0.3em] text-accent">{label}</span>
-      <h2 className="mt-2 font-display text-3xl font-bold tracking-wide text-text md:text-4xl">
+    <div className={`mb-8 sm:mb-10 ${className}`}>
+      <span className="font-mono text-xs uppercase tracking-[0.2em] text-accent sm:tracking-[0.3em]">{label}</span>
+      <h2 className="mt-2 font-display text-2xl font-bold tracking-wide text-text sm:text-3xl md:text-4xl">
         {title}
       </h2>
       <div className="mt-3 h-px w-16 bg-gradient-to-r from-accent to-warm" />

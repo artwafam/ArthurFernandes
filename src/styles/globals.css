@@ -36,10 +36,16 @@ body {
   background: var(--color-void);
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 #root {
@@ -121,7 +127,13 @@ body {
 }
 
 .section-padding {
-  padding: 5rem 1.5rem;
+  padding: 3.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding: 4.5rem 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -134,6 +146,13 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-main {
+    padding-inline: 0;
+  }
 }
 
 ::-webkit-scrollbar {

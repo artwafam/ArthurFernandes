@@ -44,11 +44,11 @@ export function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <nav className="glass mx-auto flex max-w-6xl items-center justify-between rounded-xl px-4 py-3 md:px-6">
+      <nav className="glass mx-auto flex max-w-6xl items-center justify-between rounded-xl px-3 py-2.5 sm:px-4 sm:py-3 md:px-6">
         <Link
           to={{ pathname: '/' }}
           onClick={goHome}
-          className="font-display text-lg font-bold tracking-wider text-accent neon-text"
+          className="font-display text-base font-bold tracking-wider text-accent neon-text sm:text-lg"
         >
           ARTHUR<span className="text-warm">.</span>F
         </Link>

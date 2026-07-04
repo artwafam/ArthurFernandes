@@ -11,13 +11,13 @@ export function ProfileCard() {
         href={user.html_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="glass glass-hover group flex w-full items-center gap-5 rounded-2xl p-5 transition-transform hover:-translate-y-1"
+        className="glass glass-hover group flex w-full flex-col items-center gap-4 rounded-2xl p-4 text-center transition-transform hover:-translate-y-1 sm:flex-row sm:gap-5 sm:p-5 sm:text-left"
       >
         <div className="relative shrink-0">
           <img
             src={user.avatar_url}
             alt={user.name ?? 'Arthur Fernandes'}
-            className="h-24 w-24 rounded-full border-2 border-accent/30 object-cover transition-colors group-hover:border-accent/60"
+            className="h-20 w-20 rounded-full border-2 border-accent/30 object-cover transition-colors group-hover:border-accent/60 sm:h-24 sm:w-24"
           />
           <span className="absolute -right-1 -bottom-1 rounded-full border border-void bg-void p-1">
             <svg className="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="currentColor" aria-hidden>

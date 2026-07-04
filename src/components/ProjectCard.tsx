@@ -34,14 +34,14 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-80" />
         )}
         {project.status && (
-          <span className="absolute top-3 right-3 rounded-full border border-accent/30 bg-void/80 px-3 py-1 font-mono text-xs text-accent backdrop-blur-sm">
+          <span className="absolute top-2 right-2 rounded-full border border-accent/30 bg-void/80 px-2 py-0.5 font-mono text-[10px] text-accent backdrop-blur-sm sm:top-3 sm:right-3 sm:px-3 sm:py-1 sm:text-xs">
             {t(`games.status.${project.status}`)}
           </span>
         )}
       </div>
 
-      <div className="flex flex-1 flex-col p-5">
-        <h3 className="font-display text-lg font-semibold text-text transition-colors group-hover:text-accent">
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <h3 className="font-display text-base font-semibold text-text transition-colors group-hover:text-accent sm:text-lg">
           {t(project.titleKey)}
         </h3>
         {project.subtitleKey && (
@@ -159,34 +159,35 @@ interface CyberButtonProps {
   to?: string
   variant?: 'primary' | 'ghost'
   onClick?: () => void
+  className?: string
 }
 
-export function CyberButton({ children, href, to, variant = 'primary', onClick }: CyberButtonProps) {
+export function CyberButton({ children, href, to, variant = 'primary', onClick, className = '' }: CyberButtonProps) {
   const base =
-    'inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-mono text-sm font-medium tracking-wide transition-all duration-300'
+    'inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-mono text-xs font-medium tracking-wide transition-all duration-300 sm:px-6 sm:py-3 sm:text-sm'
   const styles =
     variant === 'primary'
       ? 'border border-accent/50 bg-accent/10 text-accent hover:bg-accent/20 hover:shadow-[0_0_24px_rgba(255,214,10,0.3)]'
       : 'border border-border text-text-muted hover:border-warm/50 hover:text-warm'
 
-  const className = `${base} ${styles}`
+  const combinedClassName = `${base} ${styles} ${className}`
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <a href={href} className={combinedClassName}>
         {children}
       </a>
     )
   }
   if (to) {
     return (
-      <Link to={to} className={className}>
+      <Link to={to} className={combinedClassName}>
         {children}
       </Link>
     )
   }
   return (
-    <button type="button" onClick={onClick} className={className}>
+    <button type="button" onClick={onClick} className={combinedClassName}>
       {children}
     </button>
   )

@@ -26,11 +26,11 @@ export function GitHubStatsSection() {
         <div className="grid gap-6 lg:grid-cols-3">
           <ScrollReveal className="lg:col-span-1">
             <div className="glass glass-hover h-full rounded-xl p-6">
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                 <img
                   src={user.avatar_url}
                   alt={GITHUB_USERNAME}
-                  className="h-16 w-16 rounded-full border-2 border-accent/40"
+                  className="h-14 w-14 shrink-0 rounded-full border-2 border-accent/40 sm:h-16 sm:w-16"
                 />
                 <div>
                   <a

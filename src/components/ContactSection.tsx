@@ -66,7 +66,7 @@ export function ContactSection() {
 
         <div className="grid gap-4 md:grid-cols-3">
           {links.map((link, i) => {
-            const className = `glass glass-hover group flex w-full items-center gap-4 rounded-xl p-6 text-left ${
+            const className = `glass glass-hover group flex w-full items-center gap-3 rounded-xl p-4 text-left sm:gap-4 sm:p-6 ${
               link.accent === 'warm' ? 'hover:border-warm/40' : 'hover:border-accent/40'
             }`
 
@@ -127,11 +127,11 @@ export function ContactSection() {
           })}
         </div>
 
-        <div className="mt-6 flex flex-wrap items-center gap-4">
-          <CyberButton variant="ghost" onClick={copyEmail}>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+          <CyberButton variant="ghost" onClick={copyEmail} className="w-full sm:w-auto">
             {copied ? t('contact.copied') : t('contact.copy')}
           </CyberButton>
-          <span className="font-mono text-sm text-text-muted">{SOCIAL_LINKS.email}</span>
+          <span className="break-all font-mono text-xs text-text-muted sm:text-sm">{SOCIAL_LINKS.email}</span>
         </div>
       </div>
     </section>

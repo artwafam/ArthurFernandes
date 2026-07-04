@@ -104,13 +104,14 @@ export const GAMES: ProjectItem[] = [
     size: 'md',
   },
   {
-    id: 'panana',
-    titleKey: 'games.panana.title',
-    subtitleKey: 'games.panana.subtitle',
-    descriptionKey: 'games.panana.description',
+    id: 'beak-pulp',
+    titleKey: 'games.beakPulp.title',
+    subtitleKey: 'games.beakPulp.subtitle',
+    descriptionKey: 'games.beakPulp.description',
     status: 'wip',
-    media: { type: 'image', src: 'images/Panana&Gar.png', alt: 'Panana & Gar' },
+    media: { type: 'image', src: 'images/BeakAndPulp.jpeg', alt: 'Beak and Pulp' },
     tags: ['adventure'],
+    featured: true,
     size: 'md',
   },
   {
@@ -121,7 +122,8 @@ export const GAMES: ProjectItem[] = [
     status: 'released',
     media: { type: 'gif', src: 'images/MOSHED-2019-8-8-1-26-30.gif', alt: 'Chip Keyboard' },
     tags: ['rhythm'],
-    size: 'sm',
+    featured: true,
+    size: 'md',
   },
 ]
 
@@ -175,12 +177,10 @@ export const HOME_GAME_PREVIEWS = GAMES.filter((g) => g.featured)
 export const GALLERY_ITEMS: GalleryItem[] = [
   { id: 'talora-promo', media: { type: 'image', src: 'images/TaloraRollDesk_PROMO.png', alt: 'Talora Roll Desk' } },
   { id: 'rdk-game', media: { type: 'image', src: 'images/RDKgame.png', alt: 'Rapid Deployment Killzone' } },
-  { id: 'rdk', media: { type: 'image', src: 'images/RDK.png', alt: 'Rapid Deployment Killzone' } },
   { id: 'panana-2d', media: { type: 'image', src: 'images/Panana2D.png', alt: 'Panana 2D' } },
-  { id: 'panana-gar', media: { type: 'image', src: 'images/Panana&Gar.png', alt: 'Panana & Gar' } },
+  { id: 'beak-pulp', media: { type: 'image', src: 'images/BeakAndPulp.jpeg', alt: 'Beak and Pulp' } },
   { id: 'banana-duck', media: { type: 'gif', src: 'images/Panana.gif', alt: 'Banana Duck' } },
   { id: 'insect', media: { type: 'gif', src: 'images/GarGIF.gif', alt: 'Insect Base' } },
-  { id: 'beak-pulp', media: { type: 'image', src: 'images/BeakAndPulp.jpeg', alt: 'Beak and Pulp' } },
   { id: 'tiny4', media: { type: 'image', src: 'images/tiny4bullets.png', alt: 'Tiny 4 Bullets' } },
   { id: 'andromeda', media: { type: 'image', src: 'images/print02.png', alt: 'Take it to Andromeda' } },
   { id: 'chip', media: { type: 'gif', src: 'images/MOSHED-2019-8-8-1-26-30.gif', alt: 'Chip Keyboard' } },

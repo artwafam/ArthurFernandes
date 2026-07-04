@@ -9,29 +9,29 @@ export function Hero() {
   const { t } = useTranslation()
 
   return (
-    <section id="top" className="relative flex min-h-screen items-center section-padding pt-28">
-      <div className="container-main grid items-center gap-12 lg:grid-cols-2">
+    <section id="top" className="relative flex min-h-[100dvh] items-center section-padding pt-24 sm:pt-28">
+      <div className="container-main grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-12">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="inline-block rounded-full border border-accent/30 bg-accent/5 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.2em] text-accent">
+          <span className="inline-block max-w-full rounded-full border border-accent/30 bg-accent/5 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-accent sm:px-4 sm:text-xs sm:tracking-[0.2em]">
             {t('hero.badge')}
           </span>
 
-          <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-wide md:text-5xl lg:text-6xl">
+          <h1 className="mt-4 font-display text-3xl font-bold leading-tight tracking-wide sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
             {t('hero.title')}
             <br />
             <span className="gradient-text">{t('hero.titleAccent')}</span>
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg text-text-muted">{t('hero.subtitle')}</p>
+          <p className="mt-4 max-w-lg text-base text-text-muted sm:mt-6 sm:text-lg">{t('hero.subtitle')}</p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <CyberButton to="/games">{t('hero.ctaGames')}</CyberButton>
-            <CyberButton to="/crocotile" variant="ghost">{t('hero.ctaModels')}</CyberButton>
-            <CyberButton href="#contact" variant="ghost">{t('hero.ctaContact')}</CyberButton>
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
+            <CyberButton to="/games" className="w-full sm:w-auto">{t('hero.ctaGames')}</CyberButton>
+            <CyberButton to="/crocotile" variant="ghost" className="w-full sm:w-auto">{t('hero.ctaModels')}</CyberButton>
+            <CyberButton href="#contact" variant="ghost" className="w-full sm:w-auto">{t('hero.ctaContact')}</CyberButton>
           </div>
         </motion.div>
 
@@ -55,7 +55,7 @@ export function Hero() {
       </div>
 
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-4 left-1/2 hidden -translate-x-1/2 sm:bottom-8 sm:block"
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
@@ -99,7 +99,7 @@ export function LanguageFlags() {
   ]
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
       <span className="font-mono text-xs uppercase tracking-wider text-text-muted">{t('about.languages')}</span>
       <div className="flex gap-2">
         {flags.map((f) => (
@@ -112,7 +112,7 @@ export function LanguageFlags() {
 
 export function PageHero({ label, title, description }: { label: string; title: string; description: string }) {
   return (
-    <section className="section-padding pt-32 pb-16">
+    <section className="section-padding pt-24 pb-12 sm:pt-32 sm:pb-16">
       <div className="container-main">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -120,8 +120,8 @@ export function PageHero({ label, title, description }: { label: string; title: 
           transition={{ duration: 0.6 }}
         >
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-accent">{label}</span>
-          <h1 className="mt-3 font-display text-4xl font-bold md:text-5xl">{title}</h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted">{description}</p>
+          <h1 className="mt-3 font-display text-3xl font-bold sm:text-4xl md:text-5xl">{title}</h1>
+          <p className="mt-4 max-w-2xl text-base text-text-muted sm:text-lg">{description}</p>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-accent to-warm" />
         </motion.div>
       </div>
