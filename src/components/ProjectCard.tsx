@@ -9,12 +9,6 @@ interface ProjectCardProps {
   index?: number
 }
 
-const sizeClasses = {
-  sm: 'md:col-span-1',
-  md: 'md:col-span-1',
-  lg: 'md:col-span-2 md:row-span-1',
-}
-
 export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
   const { t } = useTranslation()
   const isYoutube = project.media.type === 'youtube'
@@ -23,7 +17,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
 
   const content = (
     <motion.article
-      className={`glass glass-hover group relative flex h-full flex-col overflow-hidden rounded-xl ${sizeClasses[project.size ?? 'md']}`}
+      className="glass glass-hover group relative flex h-full flex-col overflow-hidden rounded-xl"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

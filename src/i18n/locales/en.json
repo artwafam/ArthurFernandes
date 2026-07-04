@@ -97,6 +97,16 @@
       "description": "Empty slot — I'll drop something here when it's ready."
     }
   },
+  "animation": {
+    "label": "Animation",
+    "title": "Animation portfolio",
+    "description": "Character intros, cutscenes, and motion work brought to life in Godot.",
+    "commanderAmelia": {
+      "title": "Commander Amelia",
+      "subtitle": "Character intro",
+      "description": "An animated character introduction built in Godot, showcasing personality, timing, and scene composition."
+    }
+  },
   "web": {
     "label": "Web",
     "title": "Websites too",
@@ -113,7 +123,7 @@
     "title": "Let's work together",
     "subtitle": "I'm available for game development, programming, 3D modeling, and indie project collaborations.",
     "email": "Send an email",
-    "instagram": "Instagram",
+    "discord": "Discord",
     "itch": "itch.io",
     "copy": "Copy email",
     "copied": "Copied!"

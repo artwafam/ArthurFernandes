@@ -97,6 +97,16 @@
       "description": "Tom plats | jag lägger in något här när det är klart."
     }
   },
+  "animation": {
+    "label": "Animation",
+    "title": "Animationsportfölj",
+    "description": "Karaktärsintros, cutscenes och motion-arbete skapat i Godot.",
+    "commanderAmelia": {
+      "title": "Commander Amelia",
+      "subtitle": "Karaktärsintro",
+      "description": "En animerad karaktärsintro byggd i Godot som visar personlighet, timing och scenkomposition."
+    }
+  },
   "web": {
     "label": "Webb",
     "title": "Webbplatser också",
@@ -113,7 +123,7 @@
     "title": "Vill du jobba tillsammans?",
     "subtitle": "Jag är tillgänglig för spelutveckling, programmering, 3D-modellering och samarbeten i indieprojekt.",
     "email": "Skicka mejl",
-    "instagram": "Instagram",
+    "discord": "Discord",
     "itch": "itch.io",
     "copy": "Kopiera e-post",
     "copied": "Kopierat!"

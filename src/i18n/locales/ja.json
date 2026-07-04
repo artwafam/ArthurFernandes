@@ -97,6 +97,16 @@
       "description": "空きスロット | 準備できたらここに追加します。"
     }
   },
+  "animation": {
+    "label": "アニメーション",
+    "title": "アニメーションポートフォリオ",
+    "description": "Godotで制作したキャラクターイントロ、カットシーン、モーション作品です。",
+    "commanderAmelia": {
+      "title": "Commander Amelia",
+      "subtitle": "キャラクターイントロ",
+      "description": "Godotで制作したキャラクター紹介アニメーション。個性、タイミング、シーン構成を見せる作品です。"
+    }
+  },
   "web": {
     "label": "Web",
     "title": "Web制作も",
@@ -113,7 +123,7 @@
     "title": "一緒に作りませんか？",
     "subtitle": "ゲーム開発、プログラミング、3Dモデリング、インディープロジェクトのコラボレーションを受け付けています。",
     "email": "メールする",
-    "instagram": "Instagram",
+    "discord": "Discord",
     "itch": "itch.io",
     "copy": "メールをコピー",
     "copied": "コピーしました！"

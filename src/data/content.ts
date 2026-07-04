@@ -18,18 +18,21 @@ export const GAMES: ProjectItem[] = [
     size: 'lg',
   },
   {
-    id: 'fight-life-legacy',
-    titleKey: 'games.fightLifeLegacy.title',
-    subtitleKey: 'games.fightLifeLegacy.subtitle',
-    descriptionKey: 'games.fightLifeLegacy.description',
-    href: 'https://store.steampowered.com/app/4240750/Fight_Life_Legacy/',
-    status: 'workedOn',
-    media: {
-      type: 'image',
-      src: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4240750/369b086366153bf746724d6fcef6a9ab4d5a9a61/capsule_616x353.jpg',
-      alt: 'Fight Life Legacy',
-    },
-    tags: ['rpg', 'fighting', 'studio', 'steam'],
+    id: 'rdk',
+    titleKey: 'games.rdk.title',
+    subtitleKey: 'games.rdk.subtitle',
+    descriptionKey: 'games.rdk.description',
+    links: [
+      { labelKey: 'games.rdk.patreon', href: 'https://www.patreon.com/rdk_game' },
+      {
+        labelKey: 'games.rdk.reddit',
+        href: 'https://www.reddit.com/r/godot/comments/1rvnxux/i_made_this_intro_cutscene_entirely_using_godots/',
+      },
+    ],
+    status: 'wip',
+    href: 'https://www.youtube.com/watch?v=HX1erKPwKhc',
+    media: { type: 'youtube', src: 'HX1erKPwKhc', alt: 'Rapid Deployment Killzone gameplay' },
+    tags: ['3d', 'action', 'godot'],
     featured: true,
     size: 'lg',
   },
@@ -46,21 +49,18 @@ export const GAMES: ProjectItem[] = [
     size: 'lg',
   },
   {
-    id: 'rdk',
-    titleKey: 'games.rdk.title',
-    subtitleKey: 'games.rdk.subtitle',
-    descriptionKey: 'games.rdk.description',
-    links: [
-      { labelKey: 'games.rdk.patreon', href: 'https://www.patreon.com/rdk_game' },
-      {
-        labelKey: 'games.rdk.reddit',
-        href: 'https://www.reddit.com/r/godot/comments/1rvnxux/i_made_this_intro_cutscene_entirely_using_godots/',
-      },
-    ],
-    status: 'wip',
-    href: 'https://www.youtube.com/watch?v=HX1erKPwKhc',
-    media: { type: 'youtube', src: 'HX1erKPwKhc', alt: 'Rapid Deployment Killzone gameplay' },
-    tags: ['3d', 'action', 'godot'],
+    id: 'fight-life-legacy',
+    titleKey: 'games.fightLifeLegacy.title',
+    subtitleKey: 'games.fightLifeLegacy.subtitle',
+    descriptionKey: 'games.fightLifeLegacy.description',
+    href: 'https://store.steampowered.com/app/4240750/Fight_Life_Legacy/',
+    status: 'workedOn',
+    media: {
+      type: 'image',
+      src: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4240750/369b086366153bf746724d6fcef6a9ab4d5a9a61/capsule_616x353.jpg',
+      alt: 'Fight Life Legacy',
+    },
+    tags: ['rpg', 'fighting', 'studio', 'steam'],
     featured: true,
     size: 'lg',
   },
@@ -125,6 +125,19 @@ export const GAMES: ProjectItem[] = [
   },
 ]
 
+export const ANIMATIONS: ProjectItem[] = [
+  {
+    id: 'commander-amelia',
+    titleKey: 'animation.commanderAmelia.title',
+    subtitleKey: 'animation.commanderAmelia.subtitle',
+    descriptionKey: 'animation.commanderAmelia.description',
+    href: 'https://youtu.be/BHVearPn7E0',
+    media: { type: 'youtube', src: 'BHVearPn7E0', alt: 'Commander Amelia character intro' },
+    tags: ['2d', 'character', 'intro'],
+    size: 'lg',
+  },
+]
+
 export const MODELS: ModelItem[] = [
   {
     id: 'banana-duck',
@@ -161,14 +174,12 @@ export const HOME_GAME_PREVIEWS = GAMES.filter((g) => g.featured)
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   { id: 'talora-promo', media: { type: 'image', src: 'images/TaloraRollDesk_PROMO.png', alt: 'Talora Roll Desk' } },
-  { id: 'talora-logo', media: { type: 'image', src: 'images/talora_only.svg', alt: 'Talora' } },
   { id: 'rdk-game', media: { type: 'image', src: 'images/RDKgame.png', alt: 'Rapid Deployment Killzone' } },
   { id: 'rdk', media: { type: 'image', src: 'images/RDK.png', alt: 'Rapid Deployment Killzone' } },
   { id: 'panana-2d', media: { type: 'image', src: 'images/Panana2D.png', alt: 'Panana 2D' } },
   { id: 'panana-gar', media: { type: 'image', src: 'images/Panana&Gar.png', alt: 'Panana & Gar' } },
   { id: 'banana-duck', media: { type: 'gif', src: 'images/Panana.gif', alt: 'Banana Duck' } },
   { id: 'insect', media: { type: 'gif', src: 'images/GarGIF.gif', alt: 'Insect Base' } },
-  { id: 'losango', media: { type: 'gif', src: 'images/losango3d.gif', alt: 'Low-poly 3D' } },
   { id: 'beak-pulp', media: { type: 'image', src: 'images/BeakAndPulp.jpeg', alt: 'Beak and Pulp' } },
   { id: 'tiny4', media: { type: 'image', src: 'images/tiny4bullets.png', alt: 'Tiny 4 Bullets' } },
   { id: 'andromeda', media: { type: 'image', src: 'images/print02.png', alt: 'Take it to Andromeda' } },

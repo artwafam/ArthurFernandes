@@ -6,7 +6,7 @@ import { ContactSection } from '../components/ContactSection'
 import { GitHubStatsSection } from '../components/GitHubStats'
 import { CyberButton } from '../components/ProjectCard'
 import { MediaSlot } from '../components/MediaSlot'
-import { HOME_GAME_PREVIEWS } from '../data/content'
+import { HOME_GAME_PREVIEWS, ANIMATIONS } from '../data/content'
 import { asset } from '../utils/asset'
 
 export function HomePage() {
@@ -31,9 +31,24 @@ export function HomePage() {
             <p className="mb-8 max-w-2xl text-text-muted">{t('games.description')}</p>
           </ScrollReveal>
 
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {HOME_GAME_PREVIEWS.map((game, i) => (
               <ProjectCard key={game.id} project={game} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="animation" className="section-padding">
+        <div className="container-main">
+          <ScrollReveal>
+            <SectionHeader label={t('animation.label')} title={t('animation.title')} />
+            <p className="mb-8 max-w-2xl text-text-muted">{t('animation.description')}</p>
+          </ScrollReveal>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {ANIMATIONS.map((item, i) => (
+              <ProjectCard key={item.id} project={item} index={i} />
             ))}
           </div>
         </div>

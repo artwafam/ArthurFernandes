@@ -97,6 +97,16 @@
       "description": "Slot vazio — coloco algo aqui quando estiver pronto."
     }
   },
+  "animation": {
+    "label": "Animação",
+    "title": "Portfólio de animação",
+    "description": "Intros de personagens, cutscenes e trabalho de motion feitos no Godot.",
+    "commanderAmelia": {
+      "title": "Commander Amelia",
+      "subtitle": "Intro do personagem",
+      "description": "Intro animada de personagem feita no Godot, mostrando personalidade, timing e composição de cena."
+    }
+  },
   "web": {
     "label": "Web",
     "title": "Sites também",
@@ -113,7 +123,7 @@
     "title": "Vamos trabalhar juntos?",
     "subtitle": "Estou disponível para desenvolvimento de jogos, programação, modelagem 3D e colaborações em projetos independentes.",
     "email": "Mandar email",
-    "instagram": "Instagram",
+    "discord": "Discord",
     "itch": "itch.io",
     "copy": "Copiar email",
     "copied": "Copiado!"

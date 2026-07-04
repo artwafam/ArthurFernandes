@@ -58,7 +58,7 @@ export const LOCALES: { code: Locale; label: string; flag: string }[] = [
 
 export const SOCIAL_LINKS = {
   email: 'arthurfernandes.developer@gmail.com',
-  instagram: 'https://www.instagram.com/flu.guitarist/profilecard/?igsh=ZHdsOGZlNjR3ajNo',
+  discord: '.artwa.fer',
   itch: 'https://arthurfam.itch.io',
   github: 'https://github.com/artwafam',
   patreon: 'https://www.patreon.com/rdk_game',
