@@ -66,15 +66,27 @@ export const SOCIAL_LINKS = {
 
 export const GITHUB_USERNAME = 'artwafam'
 
-export const TECH_STACK = [
+export interface TechStackItem {
+  name: string
+  icon: string
+  href: string
+  category: string
+  featured?: boolean
+}
+
+export const TECH_STACK: TechStackItem[] = [
+  {
+    name: 'GDScript',
+    icon: 'images/godot.png',
+    href: 'https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/',
+    category: 'primary',
+    featured: true,
+  },
   { name: 'Godot', icon: 'images/godot.png', href: 'https://godotengine.org/', category: 'game' },
-  { name: 'GDScript', icon: 'images/godot.png', href: 'https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/', category: 'code' },
   { name: 'GameMaker', icon: 'images/gamemaker.png', href: 'https://gamemaker.io/', category: 'game' },
   { name: 'Crocotile3D', icon: 'images/crocotile.png', href: 'https://crocotile3d.com/', category: '3d' },
   { name: 'HTML5', icon: 'images/html5.png', href: 'https://en.wikipedia.org/wiki/HTML5', category: 'web' },
   { name: 'CSS', icon: 'images/css-3.svg', href: 'https://en.wikipedia.org/wiki/CSS', category: 'web' },
-  { name: 'TypeScript', icon: 'images/html5.png', href: 'https://www.typescriptlang.org/', category: 'code' },
-  { name: 'React', icon: 'images/html5.png', href: 'https://react.dev/', category: 'web' },
 ]
 
 export const LANGUAGE_COLORS: Record<string, string> = {

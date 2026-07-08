@@ -19,7 +19,7 @@ export function MediaSlot({ media, className = '', aspect = 'aspect-video' }: Me
         <svg className="h-8 w-8 text-accent/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
         </svg>
-        <span className="font-mono text-xs text-text-muted">{t('media.addSoon')}</span>
+        <span className="text-small text-base">{t('media.addSoon')}</span>
       </div>
     )
   }

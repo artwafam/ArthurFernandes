@@ -179,6 +179,7 @@
     "languages": "Most used languages",
     "techStack": "Tech stack",
     "viewProfile": "View GitHub profile",
+    "primaryLanguage": "Main language",
     "fallbackBio": "Game Developer, web designer and 2D animator",
     "error": "GitHub rate limit hit | stats refresh in about an hour. Your profile link still works.",
     "noLanguages": "Language breakdown isn't available right now."

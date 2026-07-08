@@ -179,6 +179,7 @@
     "languages": "よく使う言語",
     "techStack": "テックスタック",
     "viewProfile": "GitHubプロフィールを見る",
+    "primaryLanguage": "メイン言語",
     "fallbackBio": "Game Developer, web designer and 2D animator",
     "error": "GitHub API制限中 | 統計は約1時間後に更新されます。プロフィールリンクは引き続き利用できます。",
     "noLanguages": "言語の内訳は現在表示できません。"

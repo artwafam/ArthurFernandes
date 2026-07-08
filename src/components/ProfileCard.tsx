@@ -31,7 +31,7 @@ export function ProfileCard() {
             {user.name ?? 'Arthur Fernandes'}
           </p>
           <p className="font-mono text-sm text-accent">@{user.login}</p>
-          <p className="mt-2 text-sm text-text-muted">{t('profile.tagline')}</p>
+          <p className="text-small mt-2 text-base sm:text-lg">{t('profile.tagline')}</p>
         </div>
       </a>
     </div>

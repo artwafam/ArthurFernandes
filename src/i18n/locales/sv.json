@@ -179,6 +179,7 @@
     "languages": "Mest använda språk",
     "techStack": "Tech stack",
     "viewProfile": "Visa GitHub-profil",
+    "primaryLanguage": "Huvudspråk",
     "fallbackBio": "Game Developer, web designer and 2D animator",
     "error": "GitHub API-gräns nådd | statistik uppdateras om cirka en timme. Profillänken fungerar fortfarande.",
     "noLanguages": "Språkfördelning är inte tillgänglig just nu."

@@ -28,7 +28,7 @@ export function GalleryPage() {
                 >
                   <MediaSlot media={item.media} aspect="aspect-video" className="rounded-none" />
                   {item.media.alt && (
-                    <p className="p-4 font-mono text-xs text-text-muted transition-colors group-hover:text-accent">
+                    <p className="text-small p-4 text-base transition-colors group-hover:text-accent sm:text-lg">
                       {item.media.alt}
                     </p>
                   )}

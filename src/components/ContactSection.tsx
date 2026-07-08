@@ -61,7 +61,7 @@ export function ContactSection() {
       <div className="container-main">
         <ScrollReveal>
           <SectionHeader label={t('contact.label')} title={t('contact.title')} />
-          <p className="mb-10 max-w-xl text-text-muted">{t('contact.subtitle')}</p>
+          <p className="text-small mb-10 max-w-xl sm:text-lg">{t('contact.subtitle')}</p>
         </ScrollReveal>
 
         <div className="grid gap-4 md:grid-cols-3">
@@ -82,9 +82,9 @@ export function ContactSection() {
                   {link.icon}
                 </div>
                 <div>
-                  <span className="font-mono text-sm">{link.label}</span>
+                  <span className="text-base font-semibold sm:text-lg">{link.label}</span>
                   {link.handle && (
-                    <span className="mt-1 block font-mono text-xs text-text-muted">{link.handle}</span>
+                    <span className="text-small mt-1 block text-sm sm:text-base">{link.handle}</span>
                   )}
                 </div>
               </>
@@ -131,7 +131,7 @@ export function ContactSection() {
           <CyberButton variant="ghost" onClick={copyEmail} className="w-full sm:w-auto">
             {copied ? t('contact.copied') : t('contact.copy')}
           </CyberButton>
-          <span className="break-all font-mono text-xs text-text-muted sm:text-sm">{SOCIAL_LINKS.email}</span>
+          <span className="text-small break-all text-sm sm:text-base">{SOCIAL_LINKS.email}</span>
         </div>
       </div>
     </section>

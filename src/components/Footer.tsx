@@ -40,7 +40,7 @@ export function Footer() {
             itch.io
           </a>
         </div>
-        <p className="font-mono text-xs text-text-muted">
+        <p className="text-small text-sm sm:text-base">
           {year} · {t('footer.rights')}
         </p>
         <Link to="/crocotile" className="mt-2 inline-block font-mono text-xs text-text-muted/50 hover:text-accent">

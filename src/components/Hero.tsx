@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { CyberButton } from './ProjectCard'
 import { ProfileCard } from './ProfileCard'
+import { FlagIcon } from './FlagIcon'
 import { TECH_STACK } from '../types'
 import { asset } from '../utils/asset'
 
@@ -16,17 +17,17 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="inline-block max-w-full rounded-full border border-accent/30 bg-accent/5 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-accent sm:px-4 sm:text-xs sm:tracking-[0.2em]">
+          <span className="text-label inline-block max-w-full rounded-full border border-accent/30 bg-accent/5 px-4 py-2">
             {t('hero.badge')}
           </span>
 
-          <h1 className="mt-4 font-display text-3xl font-bold leading-tight tracking-wide sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="mt-5 font-display text-[2rem] font-bold leading-tight tracking-wide sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
             {t('hero.title')}
             <br />
             <span className="gradient-text">{t('hero.titleAccent')}</span>
           </h1>
 
-          <p className="mt-4 max-w-lg text-base text-text-muted sm:mt-6 sm:text-lg">{t('hero.subtitle')}</p>
+          <p className="mt-5 max-w-lg text-lg text-text-muted sm:mt-6 sm:text-xl">{t('hero.subtitle')}</p>
 
           <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
             <CyberButton to="/games" className="w-full sm:w-auto">{t('hero.ctaGames')}</CyberButton>
@@ -43,10 +44,10 @@ export function Hero() {
         >
           <ProfileCard />
           <div className="glass rounded-xl p-6">
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-accent">{t('about.label')}</span>
-            <h2 className="mt-2 font-display text-xl font-semibold">{t('about.title')}</h2>
-            <p className="mt-4 text-sm text-text-muted">{t('about.p1')}</p>
-            <p className="mt-3 text-sm text-text-muted">{t('about.p2')}</p>
+            <span className="text-label">{t('about.label')}</span>
+            <h2 className="mt-2 font-display text-xl font-semibold sm:text-2xl">{t('about.title')}</h2>
+            <p className="text-small mt-4">{t('about.p1')}</p>
+            <p className="text-small mt-3">{t('about.p2')}</p>
             <div className="mt-5 border-t border-border pt-5">
               <LanguageFlags />
             </div>
@@ -72,7 +73,7 @@ export function TechStrip() {
 
   return (
     <div className="flex flex-wrap items-center gap-4">
-      <span className="font-mono text-xs uppercase tracking-wider text-text-muted">{t('about.technologies')}</span>
+      <span className="text-small font-semibold uppercase tracking-wider">{t('about.technologies')}</span>
       {TECH_STACK.map((tech) => (
         <a
           key={tech.name}
@@ -100,10 +101,10 @@ export function LanguageFlags() {
 
   return (
     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
-      <span className="font-mono text-xs uppercase tracking-wider text-text-muted">{t('about.languages')}</span>
+      <span className="text-small font-semibold uppercase tracking-wider">{t('about.languages')}</span>
       <div className="flex gap-2">
         {flags.map((f) => (
-          <img key={f.alt} src={asset(f.src)} alt={f.alt} className="h-7 rounded-sm border border-border object-cover" />
+          <FlagIcon key={f.alt} src={f.src} alt={f.alt} size="md" />
         ))}
       </div>
     </div>
@@ -119,9 +120,9 @@ export function PageHero({ label, title, description }: { label: string; title: 
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-xs uppercase tracking-[0.3em] text-accent">{label}</span>
-          <h1 className="mt-3 font-display text-3xl font-bold sm:text-4xl md:text-5xl">{title}</h1>
-          <p className="mt-4 max-w-2xl text-base text-text-muted sm:text-lg">{description}</p>
+          <span className="text-label tracking-[0.2em] sm:tracking-[0.3em]">{label}</span>
+          <h1 className="mt-3 font-display text-[2rem] font-bold sm:text-4xl md:text-5xl">{title}</h1>
+          <p className="text-small mt-4 max-w-2xl sm:text-lg">{description}</p>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-accent to-warm" />
         </motion.div>
       </div>

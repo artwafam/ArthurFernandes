@@ -179,6 +179,7 @@
     "languages": "Linguagens mais usadas",
     "techStack": "Stack",
     "viewProfile": "Ver perfil no GitHub",
+    "primaryLanguage": "Linguagem principal",
     "fallbackBio": "Game Developer, web designer and 2D animator",
     "error": "Limite da API do GitHub | os stats voltam em cerca de uma hora. O link do perfil continua funcionando.",
     "noLanguages": "O breakdown de linguagens não está disponível agora."

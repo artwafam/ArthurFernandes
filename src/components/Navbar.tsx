@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LOCALES, type Locale } from '../types'
-import { asset } from '../utils/asset'
+import { FlagIcon } from './FlagIcon'
 import { NavLink } from './NavLink'
 import { scrollToTop } from '../hooks/useScrollRestoration'
 
@@ -72,7 +72,7 @@ export function Navbar() {
               className="glass-hover flex items-center gap-2 rounded-lg px-3 py-2 font-mono text-sm text-text-muted"
               aria-label="Change language"
             >
-              <img src={asset(currentLocale.flag)} alt="" className="h-4 w-4 rounded-sm object-cover" />
+              <FlagIcon src={currentLocale.flag} size="sm" />
               {currentLocale.label}
             </button>
             <AnimatePresence>
@@ -92,7 +92,7 @@ export function Navbar() {
                         i18n.language === locale.code ? 'text-accent' : 'text-text-muted'
                       }`}
                     >
-                      <img src={asset(locale.flag)} alt="" className="h-4 w-4 rounded-sm" />
+                      <FlagIcon src={locale.flag} size="sm" />
                       {locale.label}
                     </button>
                   ))}

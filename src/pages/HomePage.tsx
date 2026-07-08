@@ -27,7 +27,7 @@ export function HomePage() {
                 {t('games.galleryCta')}
               </CyberButton>
             </div>
-            <p className="mb-8 max-w-2xl text-text-muted">{t('games.description')}</p>
+            <p className="text-small mb-8 max-w-2xl sm:text-lg">{t('games.description')}</p>
           </ScrollReveal>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -42,7 +42,7 @@ export function HomePage() {
         <div className="container-main">
           <ScrollReveal>
             <SectionHeader label={t('animation.label')} title={t('animation.title')} />
-            <p className="mb-8 max-w-2xl text-text-muted">{t('animation.description')}</p>
+            <p className="text-small mb-8 max-w-2xl sm:text-lg">{t('animation.description')}</p>
           </ScrollReveal>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -58,7 +58,7 @@ export function HomePage() {
           <ScrollReveal>
             <SectionHeader label={t('modeling.label')} title={t('modeling.title')} />
             <div className="grid items-center gap-8 lg:grid-cols-2">
-              <p className="text-text-muted">{t('modeling.description')}</p>
+              <p className="text-small sm:text-lg">{t('modeling.description')}</p>
               <div className="glass glass-hover overflow-hidden rounded-xl">
                 <MediaSlot
                   media={{ type: 'gif', src: 'images/Panana.gif', alt: 'Banana Duck' }}
@@ -67,7 +67,7 @@ export function HomePage() {
                 <div className="flex flex-col gap-4 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
                   <div>
                     <p className="font-display font-semibold">{t('modeling.featured')}</p>
-                    <p className="font-mono text-xs text-accent">{t('modeling.tiles')}</p>
+                    <p className="text-small text-sm font-semibold text-accent sm:text-base">{t('modeling.tiles')}</p>
                   </div>
                   <CyberButton to="/crocotile" className="w-full sm:w-auto">{t('modeling.cta')}</CyberButton>
                 </div>
@@ -83,12 +83,12 @@ export function HomePage() {
             <SectionHeader label={t('web.label')} title={t('web.title')} />
             <div className="grid gap-8 lg:grid-cols-2">
               <div>
-                <p className="text-text-muted">{t('web.description')}</p>
-                <p className="mt-4 text-text-muted">{t('web.experience')}</p>
+                <p className="text-small sm:text-lg">{t('web.description')}</p>
+                <p className="text-small mt-4 sm:text-lg">{t('web.experience')}</p>
                 <div className="mt-6 space-y-3">
                   {(['web', 'design', 'video'] as const).map((key) => (
                     <div key={key} className="glass rounded-lg p-4">
-                      <p className="text-sm text-text-muted">{t(`web.activities.${key}`)}</p>
+                      <p className="text-small text-base sm:text-lg">{t(`web.activities.${key}`)}</p>
                     </div>
                   ))}
                 </div>

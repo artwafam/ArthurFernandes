@@ -20,7 +20,7 @@ export function GitHubStatsSection() {
       <div className="container-main">
         <ScrollReveal>
           <SectionHeader label={t('github.label')} title={t('github.title')} />
-          <p className="mb-10 max-w-2xl text-text-muted">{t('github.description')}</p>
+          <p className="text-small mb-10 max-w-2xl sm:text-lg">{t('github.description')}</p>
         </ScrollReveal>
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -41,7 +41,7 @@ export function GitHubStatsSection() {
                   >
                     @{user.login}
                   </a>
-                  <p className="mt-1 text-sm text-text-muted">
+                  <p className="text-small mt-1">
                     {loading ? '…' : user.bio ?? t('github.fallbackBio')}
                   </p>
                 </div>
@@ -55,7 +55,7 @@ export function GitHubStatsSection() {
                 ].map((stat) => (
                   <div key={stat.label} className="rounded-lg border border-border bg-void-light/50 p-3">
                     <p className="font-display text-2xl font-bold text-accent">{stat.value}</p>
-                    <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-text-muted">{stat.label}</p>
+                    <p className="text-small mt-1 text-sm font-semibold uppercase tracking-wider">{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -76,7 +76,7 @@ export function GitHubStatsSection() {
 
           <ScrollReveal className="lg:col-span-2" delay={0.1}>
             <div className="glass h-full rounded-xl p-6">
-              <h3 className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
+              <h3 className="text-label tracking-[0.2em]">
                 {t('github.languages')}
               </h3>
 
@@ -89,7 +89,7 @@ export function GitHubStatsSection() {
               )}
 
               {!loading && error && (
-                <p className="mt-6 text-sm text-text-muted">{t('github.error')}</p>
+                <p className="text-small mt-6">{t('github.error')}</p>
               )}
 
               {!loading && !error && data && data.languages.length > 0 && (
@@ -102,11 +102,13 @@ export function GitHubStatsSection() {
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.06 }}
                     >
-                      <div className="mb-1.5 flex justify-between font-mono text-xs">
-                        <span className="text-text">{lang.name}</span>
-                        <span className="text-text-muted">{lang.percent}%</span>
+                      <div className="mb-2 flex justify-between text-sm sm:text-base">
+                        <span className={`font-semibold ${lang.name === 'GDScript' ? 'text-accent' : 'text-text'}`}>
+                          {lang.name}
+                        </span>
+                        <span className="text-small">{lang.percent}%</span>
                       </div>
-                      <div className="h-2 overflow-hidden rounded-full bg-void-light">
+                      <div className={`overflow-hidden rounded-full bg-void-light ${lang.name === 'GDScript' ? 'h-3' : 'h-2.5'}`}>
                         <motion.div
                           className="h-full rounded-full"
                           style={{ backgroundColor: lang.color }}
@@ -122,7 +124,7 @@ export function GitHubStatsSection() {
               )}
 
               {!loading && !error && data && data.languages.length === 0 && (
-                <p className="mt-6 text-sm text-text-muted">{t('github.noLanguages')}</p>
+                <p className="text-small mt-6">{t('github.noLanguages')}</p>
               )}
 
               <div className="mt-8 flex flex-wrap gap-1 overflow-hidden rounded-lg">
@@ -142,29 +144,45 @@ export function GitHubStatsSection() {
 
         <ScrollReveal className="mt-6" delay={0.15}>
           <div className="glass rounded-xl p-6">
-            <h3 className="mb-6 font-mono text-xs uppercase tracking-[0.25em] text-accent">
+            <h3 className="text-label mb-6 tracking-[0.2em]">
               {t('github.techStack')}
             </h3>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
               {TECH_STACK.map((tech, i) => (
                 <motion.a
                   key={tech.name}
                   href={tech.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="glass-hover group flex items-center gap-3 rounded-xl border border-border p-4 transition-colors hover:border-accent/40"
+                  className={`glass-hover group flex items-center gap-4 rounded-xl border p-4 transition-colors sm:p-5 ${
+                    tech.featured
+                      ? 'border-accent/40 bg-accent/5 sm:col-span-2 md:col-span-3'
+                      : 'border-border hover:border-accent/40'
+                  }`}
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.04 }}
                   whileHover={{ y: -2 }}
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/5">
-                    <img src={asset(tech.icon)} alt="" className="h-7 w-7 object-contain" />
+                  <div
+                    className={`flex shrink-0 items-center justify-center rounded-lg bg-accent/5 ${
+                      tech.featured ? 'h-14 w-14' : 'h-11 w-11'
+                    }`}
+                  >
+                    <img
+                      src={asset(tech.icon)}
+                      alt=""
+                      className={`object-contain ${tech.featured ? 'h-9 w-9' : 'h-7 w-7'}`}
+                    />
                   </div>
                   <div>
-                    <p className="font-display text-sm font-semibold group-hover:text-accent">{tech.name}</p>
-                    <p className="font-mono text-[10px] uppercase text-text-muted">{tech.category}</p>
+                    <p className={`font-display font-semibold group-hover:text-accent ${tech.featured ? 'text-lg' : 'text-base'}`}>
+                      {tech.name}
+                    </p>
+                    <p className="text-small mt-0.5 text-xs font-semibold uppercase sm:text-sm">
+                      {tech.featured ? t('github.primaryLanguage') : tech.category}
+                    </p>
                   </div>
                 </motion.a>
               ))}

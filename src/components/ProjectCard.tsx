@@ -34,24 +34,24 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-80" />
         )}
         {project.status && (
-          <span className="absolute top-2 right-2 rounded-full border border-accent/30 bg-void/80 px-2 py-0.5 font-mono text-[10px] text-accent backdrop-blur-sm sm:top-3 sm:right-3 sm:px-3 sm:py-1 sm:text-xs">
+          <span className="absolute top-2 right-2 rounded-full border border-accent/30 bg-void/80 px-2.5 py-1 text-xs font-semibold text-accent backdrop-blur-sm sm:top-3 sm:right-3 sm:px-3 sm:text-sm">
             {t(`games.status.${project.status}`)}
           </span>
         )}
       </div>
 
       <div className="flex flex-1 flex-col p-4 sm:p-5">
-        <h3 className="font-display text-base font-semibold text-text transition-colors group-hover:text-accent sm:text-lg">
+        <h3 className="font-display text-lg font-semibold text-text transition-colors group-hover:text-accent sm:text-xl">
           {t(project.titleKey)}
         </h3>
         {project.subtitleKey && (
-          <p className="mt-1 font-mono text-xs text-warm">{t(project.subtitleKey)}</p>
+          <p className="text-small mt-1 text-sm font-semibold text-warm sm:text-base">{t(project.subtitleKey)}</p>
         )}
-        <p className="mt-2 flex-1 text-sm text-text-muted">{t(project.descriptionKey)}</p>
+        <p className="text-small mt-2 flex-1 text-base sm:text-[1.05rem]">{t(project.descriptionKey)}</p>
         {project.tags && (
           <div className="mt-3 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span key={tag} className="rounded border border-border px-2 py-0.5 font-mono text-[10px] uppercase text-text-muted">
+              <span key={tag} className="rounded border border-border px-2.5 py-1 text-xs font-semibold uppercase text-text-muted sm:text-sm">
                 {tag}
               </span>
             ))}
@@ -66,7 +66,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg border border-accent/30 bg-accent/5 px-3 py-1.5 font-mono text-xs text-accent transition-colors hover:bg-accent/15 hover:text-warm"
+                className="rounded-lg border border-accent/30 bg-accent/5 px-3 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent/15 hover:text-warm"
               >
                 {t(link.labelKey)} →
               </a>
@@ -79,7 +79,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative z-20 mt-4 inline-flex font-mono text-xs text-accent hover:text-warm"
+            className="relative z-20 mt-4 inline-flex text-sm font-semibold text-accent hover:text-warm sm:text-base"
           >
             {t('games.watchYoutube')} →
           </a>
@@ -164,7 +164,7 @@ interface CyberButtonProps {
 
 export function CyberButton({ children, href, to, variant = 'primary', onClick, className = '' }: CyberButtonProps) {
   const base =
-    'inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-mono text-xs font-medium tracking-wide transition-all duration-300 sm:px-6 sm:py-3 sm:text-sm'
+    'inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold tracking-wide transition-all duration-300 sm:px-6 sm:py-3 sm:text-base'
   const styles =
     variant === 'primary'
       ? 'border border-accent/50 bg-accent/10 text-accent hover:bg-accent/20 hover:shadow-[0_0_24px_rgba(255,214,10,0.3)]'

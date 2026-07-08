@@ -1,8 +1,18 @@
 import { GITHUB_USERNAME, LANGUAGE_COLORS } from '../types'
 
-const CACHE_KEY = 'github-portfolio-cache-v1'
+const CACHE_KEY = 'github-portfolio-cache-v2'
 const CACHE_TTL_MS = 60 * 60 * 1000
-const MAX_REPO_LANG_FETCHES = 5
+const MAX_REPO_LANG_FETCHES = 20
+
+const HIDDEN_LANGUAGES = new Set([
+  'TypeScript',
+  'JavaScript',
+  'HTML',
+  'CSS',
+  'JSON',
+  'Vue',
+  'Dockerfile',
+])
 
 export interface GitHubUser {
   public_repos: number
@@ -110,8 +120,9 @@ async function fetchFromNetwork(): Promise<GitHubStatsData> {
     }),
   )
 
-  const total = Object.values(langTotals).reduce((a, b) => a + b, 0) || 1
-  const languages = Object.entries(langTotals)
+  const filteredEntries = Object.entries(langTotals).filter(([name]) => !HIDDEN_LANGUAGES.has(name))
+  const total = filteredEntries.reduce((sum, [, bytes]) => sum + bytes, 0) || 1
+  const languages = filteredEntries
     .sort(([, a], [, b]) => b - a)
     .slice(0, 6)
     .map(([name, bytes]) => ({
@@ -120,6 +131,7 @@ async function fetchFromNetwork(): Promise<GitHubStatsData> {
       percent: Math.round((bytes / total) * 100),
       color: LANGUAGE_COLORS[name] ?? '#ffd60a',
     }))
+    .filter((lang) => lang.percent > 0)
 
   return { user, languages }
 }
