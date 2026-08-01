@@ -36,7 +36,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/ArthurFernandes">
+    <BrowserRouter>
       <GitHubProvider>
         <div className="scanlines relative min-h-screen">
           <CyberBackground />
