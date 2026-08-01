@@ -1,0 +1,7 @@
+DirectoryIndex index.php index.html
+
+# Prefer PHP entry over the old Vite index.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^index\.html$ index.php [L,R=301]
+</IfModule>
